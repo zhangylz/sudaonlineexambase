@@ -11,7 +11,7 @@
  Target Server Version : 80014
  File Encoding         : 65001
 
- Date: 27/03/2019 10:47:30
+ Date: 27/03/2019 10:55:23
 */
 
 SET NAMES utf8mb4;
@@ -174,7 +174,7 @@ CREATE TABLE `qrtz_scheduler_state`  (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', '20180621-0954071553654592899', 1553654850889, 15000);
+INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', '20180621-0954071553654592899', 1553655316007, 15000);
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -809,8 +809,10 @@ CREATE TABLE `sys_user`  (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES (1, 104, 'admin', '张延磊', '00', '549545303@qq.com', '17351098691', '0', '2019/03/27/c9a3ae5c4790cf3a46fd6f721f46f36b.jpg', 'a3ea1480d14f688070ea58322a6f9863', '1b123d', '0', '0', '127.0.0.1', '2019-03-27 10:20:39', 'admin', '2018-03-16 11:33:00', 'ry', '2019-03-27 10:27:32', '管理员');
+INSERT INTO `sys_user` VALUES (1, 104, 'admin', '张延磊', '00', '549545303@qq.com', '17351098691', '0', '2019/03/27/c9a3ae5c4790cf3a46fd6f721f46f36b.jpg', 'a3ea1480d14f688070ea58322a6f9863', '1b123d', '0', '0', '127.0.0.1', '2019-03-27 10:20:39', 'admin', '2018-03-16 11:33:00', 'admin', '2019-03-27 10:27:32', '管理员');
 INSERT INTO `sys_user` VALUES (2, 104, 'ry', '若依', '00', 'ry@qq.com', '15666666666', '1', '', '8e6d98b90472783cc73c17047ddccf36', '222222', '0', '2', '127.0.0.1', '2018-03-16 11:33:00', 'admin', '2018-03-16 11:33:00', 'admin', '2019-03-27 10:45:10', '测试员');
+INSERT INTO `sys_user` VALUES (21, 102, 'teacher', '张延磊', '00', '549545303@qq.com', '17351098691', '0', '', 'a3ea1480d14f688070ea58322a6f9863', '1b123d', '0', '0', '127.0.0.1', '2019-03-27 10:20:39', 'admin', '2018-03-27 10:51:00', 'admin', '2019-03-27 10:27:32', 'teacher');
+INSERT INTO `sys_user` VALUES (31, 103, 'student', '张延磊', '00', '549545303@qq.com', '17351098691', '0', '', 'a3ea1480d14f688070ea58322a6f9863', '1b123d', '0', '0', '127.0.0.1', '2019-03-27 10:20:39', 'admin', '2018-03-27 10:51:00', 'admin', '2019-03-27 10:27:32', 'student');
 
 -- ----------------------------
 -- Table structure for sys_user_online
@@ -834,7 +836,7 @@ CREATE TABLE `sys_user_online`  (
 -- ----------------------------
 -- Records of sys_user_online
 -- ----------------------------
-INSERT INTO `sys_user_online` VALUES ('5d928226-0e6b-4a0b-af9a-720224eccfc9', 'admin', '研发部门', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', 'on_line', '2019-03-27 10:43:32', '2019-03-27 10:45:57', 1800000);
+INSERT INTO `sys_user_online` VALUES ('5d928226-0e6b-4a0b-af9a-720224eccfc9', 'admin', '研发部门', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', 'on_line', '2019-03-27 10:43:32', '2019-03-27 10:54:33', 1800000);
 
 -- ----------------------------
 -- Table structure for sys_user_post
