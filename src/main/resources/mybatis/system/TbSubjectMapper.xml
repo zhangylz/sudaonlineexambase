@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.system.tbSubject.mapper.TbSubjectMapper">
+    
+    <resultMap type="TbSubject" id="TbSubjectResult">
+        <result property="subjectID"    column="subjectID"    />
+        <result property="subjectTitle"    column="subjectTitle"    />
+        <result property="subjectOptionA"    column="subjectOptionA"    />
+        <result property="subjectOptionB"    column="subjectOptionB"    />
+        <result property="subjectOptionC"    column="subjectOptionC"    />
+        <result property="subjectOptionD"    column="subjectOptionD"    />
+        <result property="subjectAnswer"    column="subjectAnswer"    />
+        <result property="subjectParse"    column="subjectParse"    />
+    </resultMap>
+	
+	<sql id="selectTbSubjectVo">
+        select subjectID, subjectTitle, subjectOptionA, subjectOptionB, subjectOptionC, subjectOptionD, subjectAnswer, subjectParse from sys_tb_subject
+    </sql>
+	
+    <select id="selectTbSubjectList" parameterType="TbSubject" resultMap="TbSubjectResult">
+        <include refid="selectTbSubjectVo"/>
+        <where>  
+            <if test="subjectID != null "> and subjectID = #{subjectID}</if>
+             <if test="subjectTitle != null  and subjectTitle != '' "> and subjectTitle = #{subjectTitle}</if>
+             <if test="subjectOptionA != null  and subjectOptionA != '' "> and subjectOptionA = #{subjectOptionA}</if>
+             <if test="subjectOptionB != null  and subjectOptionB != '' "> and subjectOptionB = #{subjectOptionB}</if>
+             <if test="subjectOptionC != null  and subjectOptionC != '' "> and subjectOptionC = #{subjectOptionC}</if>
+             <if test="subjectOptionD != null  and subjectOptionD != '' "> and subjectOptionD = #{subjectOptionD}</if>
+             <if test="subjectAnswer != null  and subjectAnswer != '' "> and subjectAnswer = #{subjectAnswer}</if>
+             <if test="subjectParse != null  and subjectParse != '' "> and subjectParse = #{subjectParse}</if>
+         </where>
+    </select>
+    
+    <select id="selectTbSubjectById" parameterType="Integer" resultMap="TbSubjectResult">
+        <include refid="selectTbSubjectVo"/>
+        where subjectID = #{subjectID}
+    </select>
+        
+    <insert id="insertTbSubject" parameterType="TbSubject" useGeneratedKeys="true" keyProperty="subjectID">
+        insert into sys_tb_subject
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="subjectTitle != null  and subjectTitle != ''  ">subjectTitle,</if>
+			<if test="subjectOptionA != null  and subjectOptionA != ''  ">subjectOptionA,</if>
+			<if test="subjectOptionB != null  and subjectOptionB != ''  ">subjectOptionB,</if>
+			<if test="subjectOptionC != null  and subjectOptionC != ''  ">subjectOptionC,</if>
+			<if test="subjectOptionD != null  and subjectOptionD != ''  ">subjectOptionD,</if>
+			<if test="subjectAnswer != null  and subjectAnswer != ''  ">subjectAnswer,</if>
+			<if test="subjectParse != null  and subjectParse != ''  ">subjectParse,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="subjectTitle != null  and subjectTitle != ''  ">#{subjectTitle},</if>
+			<if test="subjectOptionA != null  and subjectOptionA != ''  ">#{subjectOptionA},</if>
+			<if test="subjectOptionB != null  and subjectOptionB != ''  ">#{subjectOptionB},</if>
+			<if test="subjectOptionC != null  and subjectOptionC != ''  ">#{subjectOptionC},</if>
+			<if test="subjectOptionD != null  and subjectOptionD != ''  ">#{subjectOptionD},</if>
+			<if test="subjectAnswer != null  and subjectAnswer != ''  ">#{subjectAnswer},</if>
+			<if test="subjectParse != null  and subjectParse != ''  ">#{subjectParse},</if>
+         </trim>
+    </insert>
+	 
+    <update id="updateTbSubject" parameterType="TbSubject">
+        update sys_tb_subject
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="subjectTitle != null  and subjectTitle != ''  ">subjectTitle = #{subjectTitle},</if>
+            <if test="subjectOptionA != null  and subjectOptionA != ''  ">subjectOptionA = #{subjectOptionA},</if>
+            <if test="subjectOptionB != null  and subjectOptionB != ''  ">subjectOptionB = #{subjectOptionB},</if>
+            <if test="subjectOptionC != null  and subjectOptionC != ''  ">subjectOptionC = #{subjectOptionC},</if>
+            <if test="subjectOptionD != null  and subjectOptionD != ''  ">subjectOptionD = #{subjectOptionD},</if>
+            <if test="subjectAnswer != null  and subjectAnswer != ''  ">subjectAnswer = #{subjectAnswer},</if>
+            <if test="subjectParse != null  and subjectParse != ''  ">subjectParse = #{subjectParse},</if>
+        </trim>
+        where subjectID = #{subjectID}
+    </update>
+
+	<delete id="deleteTbSubjectById" parameterType="Integer">
+        delete from sys_tb_subject where subjectID = #{subjectID}
+    </delete>
+	
+    <delete id="deleteTbSubjectByIds" parameterType="String">
+        delete from sys_tb_subject where subjectID in 
+        <foreach item="subjectID" collection="array" open="(" separator="," close=")">
+            #{subjectID}
+        </foreach>
+    </delete>
+    
+</mapper>

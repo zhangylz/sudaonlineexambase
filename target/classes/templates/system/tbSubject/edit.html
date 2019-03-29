@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html  lang="zh" xmlns:th="http://www.thymeleaf.org">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="white-bg">
+    <div class="wrapper wrapper-content animated fadeInRight ibox-content">
+        <form class="form-horizontal m" id="form-tbSubject-edit" th:object="${tbSubject}">
+            <input id="subjectID" name="subjectID" th:field="*{subjectID}"  type="hidden">
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">试题标题：</label>
+				<div class="col-sm-8">
+					<input id="subjectTitle" name="subjectTitle" th:field="*{subjectTitle}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">选项A：</label>
+				<div class="col-sm-8">
+					<input id="subjectOptionA" name="subjectOptionA" th:field="*{subjectOptionA}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">选项B: </label>
+				<div class="col-sm-8">
+					<input id="subjectOptionB" name="subjectOptionB" th:field="*{subjectOptionB}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">选项C：</label>
+				<div class="col-sm-8">
+					<input id="subjectOptionC" name="subjectOptionC" th:field="*{subjectOptionC}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">选项D：</label>
+				<div class="col-sm-8">
+					<input id="subjectOptionD" name="subjectOptionD" th:field="*{subjectOptionD}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">答案：</label>
+				<div class="col-sm-8">
+					<input id="subjectAnswer" name="subjectAnswer" th:field="*{subjectAnswer}" class="form-control" type="text">
+				</div>
+			</div>
+			<div class="form-group">	
+				<label class="col-sm-3 control-label">解析：</label>
+				<div class="col-sm-8">
+					<input id="subjectParse" name="subjectParse" th:field="*{subjectParse}" class="form-control" type="text">
+				</div>
+			</div>
+		</form>
+    </div>
+    <div th:include="include::footer"></div>
+    <script type="text/javascript">
+		var prefix = ctx + "system/tbSubject";
+		$("#form-tbSubject-edit").validate({
+			rules:{
+				xxxx:{
+					required:true,
+				},
+			},
+			focusCleanup: true
+		});
+		
+		function submitHandler() {
+	        if ($.validate.form()) {
+	            $.operate.save(prefix + "/edit", $('#form-tbSubject-edit').serialize());
+	        }
+	    }
+	</script>
+</body>
+</html>
