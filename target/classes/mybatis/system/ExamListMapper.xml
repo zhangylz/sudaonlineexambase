@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.system.examList.mapper.ExamListMapper">
+    
+    <resultMap type="ExamList" id="ExamListResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="startTime"    column="startTime"    />
+        <result property="endTIme"    column="endTIme"    />
+        <result property="status"    column="status"    />
+    </resultMap>
+	
+	<sql id="selectExamListVo">
+        select id, name, startTime, endTIme, status from sys_exam_list
+    </sql>
+	
+    <select id="selectExamListList" parameterType="ExamList" resultMap="ExamListResult">
+        <include refid="selectExamListVo"/>
+        <where>  
+            <if test="id != null "> and id = #{id}</if>
+             <if test="name != null  and name != '' "> and name = #{name}</if>
+             <if test="startTime != null "> and startTime = #{startTime}</if>
+             <if test="endTIme != null "> and endTIme = #{endTIme}</if>
+             <if test="status != null "> and status = #{status}</if>
+         </where>
+    </select>
+    
+    <select id="selectExamListById" parameterType="Integer" resultMap="ExamListResult">
+        <include refid="selectExamListVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertExamList" parameterType="ExamList" useGeneratedKeys="true" keyProperty="id">
+        insert into sys_exam_list
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="name != null  and name != ''  ">name,</if>
+			<if test="startTime != null  ">startTime,</if>
+			<if test="endTIme != null  ">endTIme,</if>
+			<if test="status != null  ">status,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="name != null  and name != ''  ">#{name},</if>
+			<if test="startTime != null  ">#{startTime},</if>
+			<if test="endTIme != null  ">#{endTIme},</if>
+			<if test="status != null  ">#{status},</if>
+         </trim>
+    </insert>
+	 
+    <update id="updateExamList" parameterType="ExamList">
+        update sys_exam_list
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null  and name != ''  ">name = #{name},</if>
+            <if test="startTime != null  ">startTime = #{startTime},</if>
+            <if test="endTIme != null  ">endTIme = #{endTIme},</if>
+            <if test="status != null  ">status = #{status},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+	<delete id="deleteExamListById" parameterType="Integer">
+        delete from sys_exam_list where id = #{id}
+    </delete>
+	
+    <delete id="deleteExamListByIds" parameterType="String">
+        delete from sys_exam_list where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>
