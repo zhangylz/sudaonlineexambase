@@ -1,6 +1,8 @@
 package com.ruoyi.project.system.user.controller;
 
 import java.util.List;
+
+import com.ruoyi.common.utils.security.ShiroUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -56,8 +58,16 @@ public class UserController extends BaseController
     public TableDataInfo list(User user)
     {
         startPage();
+        if (user != null) {
+            System.out.println("userId " + user.getUserId() + " depth " + user.getDeptId() + " loginName " + user.getLoginName() + " time " + user.getLoginDate() + " phone " + user.getPhonenumber());
+        }
+        if (user == null || user.getUserId() == null) {
+            User _user = getSysUser();
+            user.setUserId(_user.getUserId());
+        }
         List<User> list = userService.selectUserList(user);
         return getDataTable(list);
+
     }
 
     @Log(title = "用户管理", businessType = BusinessType.EXPORT)
@@ -221,5 +231,10 @@ public class UserController extends BaseController
     public AjaxResult changeStatus(User user)
     {
         return toAjax(userService.changeStatus(user));
+    }
+
+    public User getSysUser()
+    {
+        return ShiroUtils.getSysUser();
     }
 }
