@@ -4,4 +4,4 @@ Spring Boot Version: ${spring-boot.version}
 a8P_____88  `Y8, ,8P'  ""     `Y8 88P'   "88"    "8a
 8PP"""""""    )888(    ,adPPPPP88 88      88      88
 "8b,   ,aa  ,d8" "8b,  88,    ,88 88      88      88
- `"Ybbd8"' 8P'     `Y8 `"8bbdP"Y8 88      88      88  
+ `"Ybbd8"' 8P'     `Y8 `"8bbdP"Y8 88      88      88
