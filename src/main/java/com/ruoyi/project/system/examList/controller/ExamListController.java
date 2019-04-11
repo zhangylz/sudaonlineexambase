@@ -1,6 +1,9 @@
 package com.ruoyi.project.system.examList.controller;
 
 import java.util.List;
+
+import com.ruoyi.project.system.course.domain.Course;
+import com.ruoyi.project.system.course.service.ICourseService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -34,6 +37,8 @@ public class ExamListController extends BaseController
 	
 	@Autowired
 	private IExamListService examListService;
+	@Autowired
+	private ICourseService courseService;
 	
 	@RequiresPermissions("system:examList:view")
 	@GetMapping()
@@ -51,7 +56,7 @@ public class ExamListController extends BaseController
 	public TableDataInfo list(ExamList examList)
 	{
 		startPage();
-        List<ExamList> list = examListService.selectExamListList(examList);
+		List<ExamList> list = examListService.selectExamListList(examList);
 		return getDataTable(list);
 	}
 	
@@ -111,7 +116,11 @@ public class ExamListController extends BaseController
 	@PostMapping("/add")
 	@ResponseBody
 	public AjaxResult addSave(ExamList examList)
-	{		
+	{
+		String name = examList.getName();
+		Integer courseId = Integer.valueOf(name).intValue();
+		Course course = courseService.selectCourseById(courseId);
+		examList.setName(course.getName());
 		return toAjax(examListService.insertExamList(examList));
 	}
 
