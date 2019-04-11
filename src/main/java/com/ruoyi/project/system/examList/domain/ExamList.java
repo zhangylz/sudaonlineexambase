@@ -31,6 +31,10 @@ private Date endTIme;
 /** 0:off 1:on */
 @Excel(name = "0:off 1:on", prompt = "0:off 1:on")
 private Long status;
+@Excel(name = "问题集(默认10题)", prompt = "问题集")
+private String questions;
+@Excel(name = "课程Id", prompt = "课程Id")
+private Long courseId;
 
 public void setId(Integer id)
         {
@@ -77,6 +81,12 @@ public Long getStatus()
         {
         return status;
         }
+
+public Long getCourseId() { return this.courseId; }
+public void setCourseId(Long courseId) { this.courseId = courseId; }
+public String getQuestions() { return this.questions; }
+public void setQuestions(String questions) { this.questions = questions; }
+
 @Override
 public String toString(){
         return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
@@ -85,6 +95,8 @@ public String toString(){
                 .append("startTime",getStartTime())
                 .append("endTIme",getEndTIme())
                 .append("status",getStatus())
+                .append("questions", getQuestions())
+                .append("courseId", getCourseId())
             .toString();
         }
         }

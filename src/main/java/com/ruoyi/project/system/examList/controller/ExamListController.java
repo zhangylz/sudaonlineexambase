@@ -4,6 +4,8 @@ import java.util.List;
 
 import com.ruoyi.project.system.course.domain.Course;
 import com.ruoyi.project.system.course.service.ICourseService;
+import com.ruoyi.project.system.tbSubject.domain.TbSubject;
+import com.ruoyi.project.system.tbSubject.service.ITbSubjectService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -39,6 +41,8 @@ public class ExamListController extends BaseController
 	private IExamListService examListService;
 	@Autowired
 	private ICourseService courseService;
+	@Autowired
+	private ITbSubjectService tbSubjectService;
 	
 	@RequiresPermissions("system:examList:view")
 	@GetMapping()
@@ -121,7 +125,25 @@ public class ExamListController extends BaseController
 		Integer courseId = Integer.valueOf(name).intValue();
 		Course course = courseService.selectCourseById(courseId);
 		examList.setName(course.getName());
+		// random subject list.
+		String questionListStr = this.randomQuestionList(courseId, 10);
+		examList.setQuestions(questionListStr);
+		examList.setCourseId(courseId.longValue());
 		return toAjax(examListService.insertExamList(examList));
+	}
+
+
+	String randomQuestionList(int courseId, int maxLen) {
+		TbSubject tbSubject = new TbSubject();
+		tbSubject.setCourseId(courseId);
+		List<TbSubject> tbList = tbSubjectService.selectTbSubjectList(tbSubject);
+		String str = "";
+		for (int i = 0; i < tbList.size(); i++) {
+			if (i < maxLen) {
+				str += tbList.get(i).getSubjectID() + "|";
+			}
+		}
+		return str;
 	}
 
 	/**
