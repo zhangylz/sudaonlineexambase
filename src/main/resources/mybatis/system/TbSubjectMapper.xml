@@ -13,10 +13,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <result property="subjectOptionD"    column="subjectOptionD"    />
         <result property="subjectAnswer"    column="subjectAnswer"    />
         <result property="subjectParse"    column="subjectParse"    />
+        <result property="courseId"    column="courseId"    />
     </resultMap>
 	
 	<sql id="selectTbSubjectVo">
-        select subjectID, subjectTitle, subjectOptionA, subjectOptionB, subjectOptionC, subjectOptionD, subjectAnswer, subjectParse from sys_tb_subject
+        select subjectID, subjectTitle, subjectOptionA, subjectOptionB, subjectOptionC, subjectOptionD, subjectAnswer, subjectParse, courseId from sys_tb_subject
     </sql>
 	
     <select id="selectTbSubjectList" parameterType="TbSubject" resultMap="TbSubjectResult">
@@ -30,6 +31,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
              <if test="subjectOptionD != null  and subjectOptionD != '' "> and subjectOptionD = #{subjectOptionD}</if>
              <if test="subjectAnswer != null  and subjectAnswer != '' "> and subjectAnswer = #{subjectAnswer}</if>
              <if test="subjectParse != null  and subjectParse != '' "> and subjectParse = #{subjectParse}</if>
+             <if test="courseId != null "> and courseId = #{courseId}</if>
          </where>
     </select>
     
@@ -48,6 +50,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<if test="subjectOptionD != null  and subjectOptionD != ''  ">subjectOptionD,</if>
 			<if test="subjectAnswer != null  and subjectAnswer != ''  ">subjectAnswer,</if>
 			<if test="subjectParse != null  and subjectParse != ''  ">subjectParse,</if>
+			<if test="courseId != null  ">courseId,</if>
          </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
 			<if test="subjectTitle != null  and subjectTitle != ''  ">#{subjectTitle},</if>
@@ -57,6 +60,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<if test="subjectOptionD != null  and subjectOptionD != ''  ">#{subjectOptionD},</if>
 			<if test="subjectAnswer != null  and subjectAnswer != ''  ">#{subjectAnswer},</if>
 			<if test="subjectParse != null  and subjectParse != ''  ">#{subjectParse},</if>
+			<if test="courseId != null  ">#{courseId},</if>
          </trim>
     </insert>
 	 
@@ -70,6 +74,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="subjectOptionD != null  and subjectOptionD != ''  ">subjectOptionD = #{subjectOptionD},</if>
             <if test="subjectAnswer != null  and subjectAnswer != ''  ">subjectAnswer = #{subjectAnswer},</if>
             <if test="subjectParse != null  and subjectParse != ''  ">subjectParse = #{subjectParse},</if>
+            <if test="courseId != null  ">courseId = #{courseId},</if>
         </trim>
         where subjectID = #{subjectID}
     </update>

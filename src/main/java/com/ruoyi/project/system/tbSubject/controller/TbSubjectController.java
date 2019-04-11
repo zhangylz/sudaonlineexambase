@@ -24,7 +24,7 @@ import org.springframework.web.multipart.MultipartFile;
  * 试题库 信息操作处理
  * 
  * @author yanleizhang
- * @date 2019-03-29
+ * @date 2019-04-08
  */
 @Controller
 @RequestMapping("/system/tbSubject")
@@ -41,7 +41,13 @@ public class TbSubjectController extends BaseController
 	{
 	    return prefix + "/tbSubject";
 	}
-	
+
+	@RequiresPermissions("system:tbSubject:view2")
+	@GetMapping("/2")
+	public String tbSubject2()
+	{
+		return prefix + "/tbSubject2";
+	}
 	/**
 	 * 查询试题库列表
 	 */
@@ -50,8 +56,25 @@ public class TbSubjectController extends BaseController
 	@ResponseBody
 	public TableDataInfo list(TbSubject tbSubject)
 	{
+		System.out.println("tbsubject list");
+		tbSubject.setCourseId(1);
 		startPage();
         List<TbSubject> list = tbSubjectService.selectTbSubjectList(tbSubject);
+		return getDataTable(list);
+	}
+
+	/**
+	 * 查询试题库列表
+	 */
+	@RequiresPermissions("system:tbSubject:list2")
+	@PostMapping("/list2")
+	@ResponseBody
+	public TableDataInfo list2(TbSubject tbSubject)
+	{
+		System.out.println("tbsubject list2");
+		tbSubject.setCourseId(2);
+		startPage();
+		List<TbSubject> list = tbSubjectService.selectTbSubjectList(tbSubject);
 		return getDataTable(list);
 	}
 	

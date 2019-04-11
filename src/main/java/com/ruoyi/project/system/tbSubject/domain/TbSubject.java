@@ -4,41 +4,44 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import com.ruoyi.framework.web.domain.BaseEntity;
 import com.ruoyi.framework.aspectj.lang.annotation.Excel;
-                                
+                                    
 /**
  * 试题库表 sys_tb_subject
  *
  * @author yanleizhang
- * @date 2019-03-29
+ * @date 2019-04-08
  */
 public class TbSubject extends BaseEntity
         {
 private static final long serialVersionUID=1L;
 
-/**  */
+/** 题号 */
 @Excel(name = "题号", prompt = "题号")
 private Integer subjectID;
-/**  */
-@Excel(name = "题目标题", prompt = "题目标题")
+/** 试题标题 */
+@Excel(name = "试题标题", prompt = "试题标题")
 private String subjectTitle;
-/**  */
+/** 选项A */
 @Excel(name = "选项A", prompt = "选项A")
 private String subjectOptionA;
-/**  */
+/** 选项B */
 @Excel(name = "选项B", prompt = "选项B")
 private String subjectOptionB;
-/**  */
+/** 选项C */
 @Excel(name = "选项C", prompt = "选项C")
 private String subjectOptionC;
-/**  */
+/** 选项D */
 @Excel(name = "选项D", prompt = "选项D")
 private String subjectOptionD;
-/**  */
+/** 答案 */
 @Excel(name = "答案", prompt = "答案")
 private String subjectAnswer;
-/**  */
+/** 解析 */
 @Excel(name = "解析", prompt = "解析")
 private String subjectParse;
+/** 课程ID */
+@Excel(name = "课程ID", prompt = "课程ID")
+private Integer courseId;
 
 public void setSubjectID(Integer subjectID)
         {
@@ -112,6 +115,15 @@ public String getSubjectParse()
         {
         return subjectParse;
         }
+public void setCourseId(Integer courseId)
+        {
+        this.courseId = courseId;
+        }
+
+public Integer getCourseId()
+        {
+        return courseId;
+        }
 @Override
 public String toString(){
         return new ToStringBuilder(this,ToStringStyle.MULTI_LINE_STYLE)
@@ -123,6 +135,7 @@ public String toString(){
                 .append("subjectOptionD",getSubjectOptionD())
                 .append("subjectAnswer",getSubjectAnswer())
                 .append("subjectParse",getSubjectParse())
+                .append("courseId",getCourseId())
             .toString();
         }
         }

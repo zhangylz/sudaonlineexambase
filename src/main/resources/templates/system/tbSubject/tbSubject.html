@@ -13,6 +13,7 @@
                         <li>
                             试题标题：<input type="text" name="subjectTitle"/>
                         </li>
+
                         <li>
                             <a class="btn btn-primary btn-rounded btn-sm" onclick="$.table.search()"><i
                                     class="fa fa-search"></i>&nbsp;搜索</a>
@@ -53,7 +54,7 @@
     var editFlag = [[${@permission.hasPermi('system:tbSubject:edit')}]];
     var removeFlag = [[${@permission.hasPermi('system:tbSubject:remove')}]];
     var prefix = ctx + "system/tbSubject";
-                                                                                                                                                                        
+                                                                                                                                                                                            
     $(function () {
         var options = {
             url: prefix + "/list",
@@ -108,7 +109,7 @@
                         title: '解析',
                         sortable: true
                     },
-                                                                            {
+                    {
                     title: '操作',
                     align: 'center',
                     formatter: function (value, row, index) {
