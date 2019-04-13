@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.project.system.examRecord.mapper.ExamRecordMapper">
+    
+    <resultMap type="ExamRecord" id="ExamRecordResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="examId"    column="exam_id"    />
+        <result property="score"    column="score"    />
+        <result property="record"    column="record"    />
+    </resultMap>
+	
+	<sql id="selectExamRecordVo">
+        select id, user_id, exam_id, score, record from sys_exam_record
+    </sql>
+	
+    <select id="selectExamRecordList" parameterType="ExamRecord" resultMap="ExamRecordResult">
+        <include refid="selectExamRecordVo"/>
+        <where>  
+            <if test="id != null "> and id = #{id}</if>
+             <if test="userId != null "> and user_id = #{userId}</if>
+             <if test="examId != null "> and exam_id = #{examId}</if>
+             <if test="score != null "> and score = #{score}</if>
+             <if test="record != null  and record != '' "> and record = #{record}</if>
+         </where>
+    </select>
+    
+    <select id="selectExamRecordById" parameterType="Integer" resultMap="ExamRecordResult">
+        <include refid="selectExamRecordVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertExamRecord" parameterType="ExamRecord">
+        insert into sys_exam_record
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null  ">id,</if>
+			<if test="userId != null  ">user_id,</if>
+			<if test="examId != null  ">exam_id,</if>
+			<if test="score != null  ">score,</if>
+			<if test="record != null  and record != ''  ">record,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null  ">#{id},</if>
+			<if test="userId != null  ">#{userId},</if>
+			<if test="examId != null  ">#{examId},</if>
+			<if test="score != null  ">#{score},</if>
+			<if test="record != null  and record != ''  ">#{record},</if>
+         </trim>
+    </insert>
+	 
+    <update id="updateExamRecord" parameterType="ExamRecord">
+        update sys_exam_record
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null  ">user_id = #{userId},</if>
+            <if test="examId != null  ">exam_id = #{examId},</if>
+            <if test="score != null  ">score = #{score},</if>
+            <if test="record != null  and record != ''  ">record = #{record},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+	<delete id="deleteExamRecordById" parameterType="Integer">
+        delete from sys_exam_record where id = #{id}
+    </delete>
+	
+    <delete id="deleteExamRecordByIds" parameterType="String">
+        delete from sys_exam_record where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>
