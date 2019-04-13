@@ -18,6 +18,8 @@ public interface UserRoleMapper
      */
     public int deleteUserRoleByUserId(Long userId);
 
+    public int selectUserRoleByUserId(Long userId);
+
     /**
      * 批量删除用户和角色关联
      * 

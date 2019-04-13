@@ -2,6 +2,7 @@ package com.ruoyi.project.system.examRecord.controller;
 
 import java.util.List;
 
+import com.ruoyi.common.utils.security.ShiroUtils;
 import com.ruoyi.project.system.examList.domain.ExamList;
 import com.ruoyi.project.system.examList.service.IExamListService;
 import com.ruoyi.project.system.user.domain.User;
@@ -62,6 +63,12 @@ public class ExamRecordController extends BaseController
 	public TableDataInfo list(ExamRecord examRecord)
 	{
 		startPage();
+		User _user = ShiroUtils.getSysUser();
+		if (userService.selectUserRoleByUserId(_user.getUserId()) > 100) {
+			// student
+			int userId = _user.getUserId().intValue();
+			examRecord.setUserId(userId);
+		}
         List<ExamRecord> list = examRecordService.selectExamRecordList(examRecord);
 		for(int i = 0; i <list.size(); i++) {
 			int userId = list.get(i).getUserId();

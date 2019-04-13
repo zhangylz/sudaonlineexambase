@@ -155,4 +155,7 @@ public interface IUserService
      * @return 结果
      */
     public int changeStatus(User user);
+
+
+    public int selectUserRoleByUserId(Long userId);
 }
