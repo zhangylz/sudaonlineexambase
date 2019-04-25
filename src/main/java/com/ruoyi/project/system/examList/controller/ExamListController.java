@@ -206,15 +206,18 @@ public class ExamListController extends BaseController
 		return getDataTable(list);
 	}
 
-	@RequiresPermissions("system:examList:list:student")
+	@RequiresPermissions("system:examList:view:student")
 	@PostMapping("/getDetailPaper")
 	@ResponseBody
-	public String getDetailPaper(@PathVariable("paperId") Integer id, Model model)
+	public String getDetailPaper(ModelMap mmap)
 	{
-		ExamList list = examListService.selectExamListById(id);
-		model.addAttribute("questions", list.getQuestions());
-		model.addAttribute("user", ShiroUtils.getSysUser());
-		model.addAttribute("paperId", id);
+		//String str = mmap.get("postIds").toString();
+//		mmap.put("roles", roleService.selectRoleAll());
+//		mmap.put("posts", postService.selectPostAll());
+//		ExamList list = examListService.selectExamListById(id);
+//		model.addAttribute("questions", list.getQuestions());
+//		model.addAttribute("user", ShiroUtils.getSysUser());
+//		model.addAttribute("paperId", id);
 		return  prefix + "/paper";
 	}
 }
