@@ -1,14 +1,18 @@
 package com.ruoyi.project.system.examList.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import com.ruoyi.common.utils.security.ShiroUtils;
 import com.ruoyi.project.system.course.domain.Course;
 import com.ruoyi.project.system.course.service.ICourseService;
 import com.ruoyi.project.system.tbSubject.domain.TbSubject;
 import com.ruoyi.project.system.tbSubject.service.ITbSubjectService;
+import com.ruoyi.project.system.user.domain.User;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -181,7 +185,36 @@ public class ExamListController extends BaseController
 		return toAjax(examListService.deleteExamListByIds(ids));
 	}
 
+	@RequiresPermissions("system:examList:view:student")
+	@GetMapping("/student")
+	public String examListStu(Model model)
+	{
+		List<ExamList> list = examListService.selectExamListList(null);
+		model.addAttribute("examList", list);
+		return prefix + "/selectPaper";
+	}
+	/**
+	 * 查询考试列列表
+	 */
+	@RequiresPermissions("system:examList:list:student")
+	@PostMapping("/list/student")
+	@ResponseBody
+	public TableDataInfo listStu(ExamList examList)
+	{
+		startPage();
+		List<ExamList> list = examListService.selectExamListList(examList);
+		return getDataTable(list);
+	}
 
-
-	
+	@RequiresPermissions("system:examList:list:student")
+	@PostMapping("/getDetailPaper")
+	@ResponseBody
+	public String getDetailPaper(@PathVariable("paperId") Integer id, Model model)
+	{
+		ExamList list = examListService.selectExamListById(id);
+		model.addAttribute("questions", list.getQuestions());
+		model.addAttribute("user", ShiroUtils.getSysUser());
+		model.addAttribute("paperId", id);
+		return  prefix + "/paper";
+	}
 }

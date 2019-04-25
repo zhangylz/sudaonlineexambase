@@ -8,9 +8,9 @@
 	<version>3.2.0</version>
 	<packaging>jar</packaging>
 
-	<name>RuoYi</name>
-	<url>http://www.ruoyi.vip</url>
-	<description>若依管理系统</description>
+	<name>考试系统</name>
+	<url>http://www.baidu.com</url>
+	<description>在线考试系统系统</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -80,6 +80,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<!-- Spring Boot JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
 		<!-- spring-boot-devtools -->
@@ -201,6 +207,19 @@
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>
 			<version>${velocity.version}</version>
+		</dependency>
+
+		<!--JSP 依赖  -->
+		<!-- servlet依赖. -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 		<!--验证码 -->

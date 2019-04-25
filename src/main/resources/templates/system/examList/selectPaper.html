@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+<div class="data_list">
+    <div class="data_content">
+        <form action="system/examList/getDetailPaper" method="post" onsubmit="return checkForm()">
+            <table width="40%" align="center">
+                <tr>
+                    <td><label><strong>请选择考试试卷：</strong></label></td>
+                    <td>
+                        <select id="paperId" name="paperId">
+                            <option value="">请选择...</option>
+                            <div class="weui-cell weui-media-box_appmsg">
+                                <option th:each="p:${examList}" th:value="${p.id}"     th:selected="${p.id==-999}"    th:text="${p.name}" ></option>
+                            </div>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" class="btn  btn-primary" value="确定"/>
+                    </td>
+                    <td>
+                        <input type="button" class="btn  btn-primary" value="返回" onclick="javascript:history.back() "/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function checkForm(){
+        var paperId=$("#paperId").val();
+        if(paperId==null||paperId==""){
+            alert("请选择考试试卷！");
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

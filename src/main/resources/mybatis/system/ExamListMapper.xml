@@ -15,7 +15,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </resultMap>
 	
 	<sql id="selectExamListVo">
-        select id, name, startTime, endTIme, status from sys_exam_list
+        select id, name, startTime, endTIme, status, questions from sys_exam_list
     </sql>
 	
     <select id="selectExamListList" parameterType="ExamList" resultMap="ExamListResult">

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<meta charset="utf-8">
+<head th:include="include :: header"></head>
+<body class="gray-bg">
+<div class="data_list">
+    <div class="data_info">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;考试时间：<strong>20分钟</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            计时：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="useTime" style="font-weight: bold;"></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            剩余时间：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font id="remainTime" style="font-weight: bold;"></font></p>
+        <hr/>
+        <p class="examTitle">${paper.paperName}&nbsp;&nbsp;考试卷</p>
+        <p class="examScoreInfo">(&nbsp;满分100&nbsp;&nbsp;单选题100分&nbsp;&nbsp;)</p>
+    </div>
+    <div class="data_content">
+        <strong><big>单选题</big></strong>（每题10分，答错不得分）<br/><br/>
+        <form id="myForm" action="addExam" method="post">
+            <input type="hidden" name="exam.student.id" value="${paper.userId }"/>
+            <input type="hidden" name="exam.paper.id" value="${paper.subjectId }"/>
+            <div class="weui-cell weui-media-box_appmsg"  th:each="gw,gwstate:${paper.data}">
+                <strong>[&nbsp;${gwstate.index+1}&nbsp;]&nbsp;${gw.subjectTitle }</strong><br/><br/>
+                <label class="radio">
+                    <input type="radio" name="id-r-${s.subjectID }"  value="A">
+                    ${gw.subjectOptionA }
+                </label>
+                <label class="radio">
+                    <input type="radio" name="id-r-${s.subjectID }"  value="B">
+                    ${gw.subjectOptionB }
+                </label>
+                <label class="radio">
+                    <input type="radio" name="id-r-${s.subjectID }"  value="C">
+                    ${gw.subjectOptionC }
+                </label>
+                <label class="radio">
+                    <input type="radio" name="id-r-${s.subjectID }"  value="D">
+                    ${gw.subjectOptionD }
+                </label>
+                <br/>
+            </div>
+            <button class="btn btn-primary" type="submit">交卷</button>
+        </form>
+    </div>
+</div>
+
+<script th:inline="javascript">
+    var examTime=20*60;
+    var useTime=0,remainTime=examTime;
+
+    // 显示使用时间和剩余时间
+    function showCount(){
+        if(remainTime==0){
+            document.getElementById("myForm").submit();
+        }
+        useTime+=1;
+        remainTime-=1;
+        var hourU=Math.floor(useTime/3600);
+        var minuteU=Math.floor((useTime-hourU*3600)/60);
+        var secondU=Math.floor(useTime-hourU*3600-minuteU*60);
+        document.getElementById("useTime").innerHTML=format(hourU)+":"+format(minuteU)+":"+format(secondU);
+
+        var hourR=Math.floor(remainTime/3600);
+        var minuteR=Math.floor((remainTime-hourR*3600)/60);
+        var secondR=Math.floor(remainTime-hourR*3600-minuteR*60);
+        document.getElementById("remainTime").innerHTML=format(hourR)+":"+format(minuteR)+":"+format(secondR);
+    }
+
+    // 格式化日期数字
+    function format(timeNumber){
+        if(timeNumber==0){
+            return "00";
+        }else if(timeNumber<10){
+            return "0"+timeNumber;
+        }else{
+            return timeNumber;
+        }
+    }
+
+    window.setInterval("showCount()",1000);
+</script>
+</body>
+</html>

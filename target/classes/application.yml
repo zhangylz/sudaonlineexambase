@@ -66,7 +66,11 @@ spring:
     restart:
       # 热部署开关
       enabled: true
-
+  ## JSP配置
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
 # MyBatis
 mybatis:
     # 搜索指定包别名
