@@ -7,6 +7,7 @@ import com.ruoyi.common.utils.ServletUtils;
 import com.ruoyi.common.utils.security.ShiroUtils;
 import com.ruoyi.project.system.course.domain.Course;
 import com.ruoyi.project.system.course.service.ICourseService;
+import com.ruoyi.project.system.examList.domain.PaperInfo;
 import com.ruoyi.project.system.examRecord.domain.ExamRecord;
 import com.ruoyi.project.system.examRecord.service.IExamRecordService;
 import com.ruoyi.project.system.tbSubject.domain.TbSubject;
@@ -212,10 +213,14 @@ public class ExamListController extends BaseController
 
 	@RequiresPermissions("system:examList:view:student")
 	@PostMapping("/getDetailPaper")
-	public String getDetailPaper(@ModelAttribute ExamList examList, Model model)
+	@ResponseBody
+	public PaperInfo getDetailPaper(@ModelAttribute ExamList examList)
 	{
 		System.out.println(examList);
 		ExamList list = examListService.selectExamListById(examList.getId());
+		User user = ShiroUtils.getSysUser();
+		Integer examId = examList.getId();
+
 		String questions = list.getQuestions();
 		String [] _listStr = questions.split("\\|");
 		List<TbSubject> listSubject = new ArrayList<TbSubject>();
@@ -223,12 +228,27 @@ public class ExamListController extends BaseController
 			Integer subjectId = Integer.valueOf(_listStr[j]);
 			listSubject.add(tbSubjectService.selectTbSubjectById(subjectId));
 		}
+		PaperInfo paperInfo = new  PaperInfo();
+		paperInfo.setPaperName(list.getName());
+		paperInfo.setUser(user);
+		paperInfo.setPaperId(examList.getId());
+		paperInfo.setSubjectList(listSubject);
 
-		model.addAttribute("questions", listSubject);
-		model.addAttribute("user", ShiroUtils.getSysUser());
-		model.addAttribute("paperId", examList.getId());
-		model.addAttribute("paperName", examList.getName());
-		return  prefix + "/paper";
+
+		List<ExamRecord> examRecords = examRecordService.selectExamRecordByUserId(user.getUserId().intValue());
+		for (int i = 0; i < examRecords.size(); i++ ) {
+			ExamRecord examRecord = examRecords.get(i);
+			if (examRecord.getExamId() == examId && examRecord.getUserId().intValue() == user.getUserId()) {
+				return paperInfo;
+			}
+		}
+
+		ExamRecord examRecord = new ExamRecord();
+		examRecord.setUserId(user.getUserId().intValue());
+		examRecord.setExamId(examList.getId());
+		examRecordService.insertExamRecord(examRecord); // 添加考试记录
+
+		return paperInfo;
 	}
 
 	@RequiresPermissions("system:examList:view:student")
@@ -236,13 +256,13 @@ public class ExamListController extends BaseController
 	public String getDetailPaperGet(Model model)
 	{
 		User user = ShiroUtils.getSysUser();
-		ExamRecord examRecord = examRecordService.selectExamRecordByUserId(user.getUserId().intValue());
-		if (examRecord == null) {
+		List<ExamRecord> examRecords = examRecordService.selectExamRecordByUserId(user.getUserId().intValue());
+		if (0 == examRecords.size()) {
 			List<ExamList> list = examListService.selectExamListList(null);
 			model.addAttribute("examList", list);
 			return prefix + "/selectPaper";
 		} else {
-			ExamList examlist = examListService.selectExamListById(examRecord.getExamId());
+			ExamList examlist = examListService.selectExamListById(examRecords.get(0).getExamId());
 			String[] listStr = examlist.getQuestions().split("\\|");
 			List<TbSubject> _listSubject = new ArrayList<TbSubject>() {
 			};

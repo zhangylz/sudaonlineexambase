@@ -30,7 +30,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     
     <select id="selectExamRecordById" parameterType="Integer" resultMap="ExamRecordResult">
         <include refid="selectExamRecordVo"/>
-        where id = #{id}
+        where id = #{id} and record = null
     </select>
 
     <select id="selectExamRecordByUserId" parameterType="Integer" resultMap="ExamRecordResult">
@@ -39,7 +39,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
         
     <insert id="insertExamRecord" parameterType="ExamRecord">
-        insert into sys_exam_record
+        replace into sys_exam_record
 		<trim prefix="(" suffix=")" suffixOverrides=",">
 			<if test="id != null  ">id,</if>
 			<if test="userId != null  ">user_id,</if>

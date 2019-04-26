@@ -99,7 +99,7 @@ public class ExamRecordServiceImpl implements IExamRecordService {
     }
 
     @Override
-    public ExamRecord selectExamRecordByUserId(Integer id) {
+    public List<ExamRecord> selectExamRecordByUserId(Integer id) {
         return examRecordMapper.selectExamRecordByUserId(id);
     }
 

@@ -34,14 +34,18 @@
 <div th:include="include::footer"></div>
 <script th:src="@{/ajax/libs/select/select2.js}"></script>
 <script>
-    console.log("hello  world.....");
     var prefix = ctx + "system/examList";
     function submitHandler() {
         console.log("submitHandler");
         var data = $("#paperSelect").serializeArray();
         var postIds = $.form.selectSelects("paperId");
         data.push({"name": "id", "value": postIds});
-        $.operate.saveTab(prefix + "/getDetailPaper", data);
+        $.post(prefix + "/getDetailPaper", {"id": $.form.selectSelects("paperId")}, function (data) {
+            if (data) {
+                alert("报名考试 " + data.paperName);
+                closeItem();
+            }
+        }, "json");
     }
 </script>
 </body>
