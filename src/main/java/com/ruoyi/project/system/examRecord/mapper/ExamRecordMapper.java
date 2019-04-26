@@ -18,7 +18,7 @@ public interface ExamRecordMapper
      * @return 考试记录信息
      */
 	public ExamRecord selectExamRecordById(Integer id);
-
+	public ExamRecord selectExamRecordByUserId(Integer id);
 	/**
      * 查询考试记录列表
      *

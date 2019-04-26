@@ -98,4 +98,9 @@ public class ExamRecordServiceImpl implements IExamRecordService {
         return successMsg.toString();
     }
 
+    @Override
+    public ExamRecord selectExamRecordByUserId(Integer id) {
+        return examRecordMapper.selectExamRecordByUserId(id);
+    }
+
 }

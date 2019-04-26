@@ -32,6 +32,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <include refid="selectExamRecordVo"/>
         where id = #{id}
     </select>
+
+    <select id="selectExamRecordByUserId" parameterType="Integer" resultMap="ExamRecordResult">
+        <include refid="selectExamRecordVo"/>
+        where user_id = #{id}
+    </select>
         
     <insert id="insertExamRecord" parameterType="ExamRecord">
         insert into sys_exam_record

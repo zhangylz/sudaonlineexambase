@@ -4,7 +4,14 @@
     <list default="true" id="5b26e8bf-5b73-4d10-92bc-33bd5a835546" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/mapper/ExamRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/mapper/ExamRecordMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/ExamRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/ExamRecordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/IExamRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/IExamRecordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/domain/TbSubject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/domain/TbSubject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/system/ExamRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/system/ExamRecordMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/system/examList/selectPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/system/examList/selectPaper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/system/examList/paper.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/system/examList/paper.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/system/examList/selectPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/system/examList/selectPaper.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,67 +24,110 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/controller/ProfileController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="134" column="37" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="37" />
+            <state relative-caret-position="386">
+              <caret line="258" column="54" lean-forward="true" selection-start-line="258" selection-start-column="54" selection-end-line="258" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6329#6340#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/domain/ExamList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-509">
-              <caret line="110" selection-start-line="110" selection-end-line="111" selection-end-column="55" />
+            <state relative-caret-position="306">
+              <caret line="45" column="17" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="17" />
               <folding>
-                <element signature="e#7022#7023#0" expanded="true" />
-                <element signature="e#7068#7069#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+                <element signature="e#1122#1123#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/selectPaper.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="14" column="71" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="71" />
+              <folding>
+                <element signature="e#1039#1045#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/selectPaper.html">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="78" column="40" lean-forward="true" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/user/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="124" column="87" selection-start-line="124" selection-start-column="74" selection-end-line="124" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/user/resetPwd.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="209" column="33" selection-start-line="209" selection-start-column="19" selection-end-line="209" selection-end-column="33" />
+            <state relative-caret-position="175">
+              <caret line="36" column="87" lean-forward="true" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#274#280#0" expanded="true" />
+                <element signature="e#280#286#0" expanded="true" />
+                <element signature="e#286#292#0" expanded="true" />
+                <element signature="e#292#298#0" expanded="true" />
+                <element signature="e#298#304#0" expanded="true" />
+                <element signature="e#304#310#0" expanded="true" />
+                <element signature="e#310#316#0" expanded="true" />
+                <element signature="e#316#322#0" expanded="true" />
+                <element signature="e#348#354#0" expanded="true" />
+                <element signature="e#354#360#0" expanded="true" />
+                <element signature="e#360#366#0" expanded="true" />
+                <element signature="e#366#372#0" expanded="true" />
+                <element signature="e#372#378#0" expanded="true" />
+                <element signature="e#378#384#0" expanded="true" />
+                <element signature="e#384#390#0" expanded="true" />
+                <element signature="e#390#396#0" expanded="true" />
+                <element signature="e#396#402#0" expanded="true" />
+                <element signature="e#402#408#0" expanded="true" />
+                <element signature="e#408#414#0" expanded="true" />
+                <element signature="e#414#420#0" expanded="true" />
+                <element signature="e#420#426#0" expanded="true" />
+                <element signature="e#426#432#0" expanded="true" />
+                <element signature="e#432#438#0" expanded="true" />
+                <element signature="e#438#444#0" expanded="true" />
+                <element signature="e#460#466#0" expanded="true" />
+                <element signature="e#466#472#0" expanded="true" />
+                <element signature="e#472#478#0" expanded="true" />
+                <element signature="e#478#484#0" expanded="true" />
+                <element signature="e#484#490#0" expanded="true" />
+                <element signature="n#style#0;n#font#0;n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#543#549#0" expanded="true" />
+                <element signature="e#549#555#0" expanded="true" />
+                <element signature="e#555#561#0" expanded="true" />
+                <element signature="e#561#567#0" expanded="true" />
+                <element signature="e#567#573#0" expanded="true" />
+                <element signature="e#573#579#0" expanded="true" />
+                <element signature="e#579#585#0" expanded="true" />
+                <element signature="e#585#591#0" expanded="true" />
+                <element signature="e#591#597#0" expanded="true" />
+                <element signature="e#597#603#0" expanded="true" />
+                <element signature="e#603#609#0" expanded="true" />
+                <element signature="e#609#615#0" expanded="true" />
+                <element signature="e#615#621#0" expanded="true" />
+                <element signature="e#639#645#0" expanded="true" />
+                <element signature="e#645#651#0" expanded="true" />
+                <element signature="e#651#657#0" expanded="true" />
+                <element signature="e#657#663#0" expanded="true" />
+                <element signature="e#663#669#0" expanded="true" />
+                <element signature="n#style#0;n#font#1;n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#786#792#0" expanded="true" />
+                <element signature="e#792#798#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/domain/TbSubject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -94,21 +144,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.setAttribute</find>
-      <find>/login</find>
-      <find>html</find>
-      <find>session</find>
-      <find>usersevice</find>
-      <find>IUserService</find>
-      <find>by</find>
-      <find>exam.student.id</find>
-      <find>examListService</find>
-      <find>squestionList</find>
-      <find>removeUrl</find>
-      <find>system:examList:list</find>
       <find>status</find>
       <find>formatter</find>
-      <find>examList</find>
       <find>getsysuser</find>
       <find>getSysUser</find>
       <find>getSysUser()</find>
@@ -122,8 +159,21 @@
       <find>post</find>
       <find>hello  world.....</find>
       <find>doSubmit</find>
-      <find>submitHandler</find>
       <find>/add</find>
+      <find>prefix</find>
+      <find>submitHandler</find>
+      <find>form-examList-add</find>
+      <find>selectpar</find>
+      <find>examlis</find>
+      <find>paperSelect</find>
+      <find>selectExamRecordById</find>
+      <find>/login</find>
+      <find>myForm</find>
+      <find>selectPaper</find>
+      <find>showCount</find>
+      <find>response</find>
+      <find>examList</find>
+      <find>subId</find>
     </findStrings>
     <dirStrings>
       <dir>F:\classdesign\project\sudaonlineexambase\src\main\java\com\ruoyi\project\system\ceshi</dir>
@@ -137,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/system/subject/edit.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/system/subject/add.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/system/subject/subject.html" />
@@ -145,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/service/TbSubjectServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/service/ITbSubjectService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/mapper/TbSubjectMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/domain/TbSubject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/service/IExamListService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/service/ExamListServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/mapper/ExamListMapper.java" />
@@ -166,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/domain/ExamList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/domain/ExamRecord.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/system/examRecord/examRecord.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/system/ExamRecordMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/mapper/UserRoleMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/service/IUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/service/UserServiceImpl.java" />
@@ -182,10 +229,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/WEB-INF/jsp/paper.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/WEB-INF/jsp/myExam.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/WEB-INF/jsp/selectPaper.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/system/ExamListMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/system/examList/selectPaper.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/system/ExamRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/mapper/ExamRecordMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/IExamRecordService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/ExamRecordServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/domain/TbSubject.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html" />
       </list>
     </option>
   </component>
@@ -271,6 +323,123 @@
               <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="examList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="examList" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="examList" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="examList" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="examRecord" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="examRecord" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="examRecord" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="examRecord" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="tbSubject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="tbSubject" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -306,7 +475,35 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RuoYi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sudaonlineexambase" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="examList" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,7 +519,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556197401300" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556267848805" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -373,12 +570,12 @@
       <workItem from="1554950475571" duration="14970000" />
       <workItem from="1555128837712" duration="10012000" />
       <workItem from="1555163508660" duration="2374000" />
-      <workItem from="1556092833668" duration="15927000" />
+      <workItem from="1556092833668" duration="30891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85057000" />
+    <option name="totallyTimeSpent" value="100021000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -391,9 +588,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17803837" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23454158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -403,8 +599,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.34019503" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8017058" visible="true" weight="0.2524377" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7745203" weight="0.29144096" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8017058" visible="true" weight="0.19609967" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7745203" weight="0.22643554" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32936078" />
@@ -429,7 +625,7 @@
       <window_info anchor="right" id="Preview" order="10" weight="0.071428575" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17803837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23454158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -439,15 +635,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.34019503" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8017058" visible="true" weight="0.30119178" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7745203" weight="0.29144096" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8017058" weight="0.45937163" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7745203" visible="true" weight="0.22643554" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32936078" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4989339" weight="0.22860238" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.19829424" side_tool="true" visible="true" weight="0.30119178" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.19829424" side_tool="true" weight="0.30119178" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.33044422" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -501,141 +697,14 @@
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java</url>
-          <line>213</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java</url>
-          <line>220</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="examList.name" />
-      </configuration>
-    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/ExamRecordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/system/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/domain/ExamRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="70" column="15" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examRecord/examRecord.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="102" column="18" selection-start-line="102" selection-start-column="18" selection-end-line="102" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/IExamRecordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/system/ExamRecordMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/framework/shiro/web/filter/LogoutFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/role/service/IRoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="50" column="30" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/system/UserRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="81" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/role/service/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/mapper/UserRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/stuexam/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/stuexam/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="67" column="42" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#Ol#0;n#div#1;n#section#3;n#form#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#li#0;n#Ol#0;n#div#1;n#section#3;n#form#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#0;n#Ol#0;n#div#1;n#section#3;n#form#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#li#0;n#Ol#0;n#div#1;n#section#3;n#form#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#Ol#0;n#div#1;n#section#3;n#form#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#li#1;n#Ol#0;n#div#1;n#section#3;n#form#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#Ol#0;n#div#1;n#section#3;n#form#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#li#1;n#Ol#0;n#div#1;n#section#3;n#form#0;n#body#0;n#html#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-druid.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -699,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/framework/shiro/service/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -728,13 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/domain/TbSubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -774,24 +829,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/examList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -829,7 +870,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="78" column="40" lean-forward="true" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
+          <caret line="78" column="40" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -849,15 +890,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/controller/ProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="134" column="37" selection-start-line="134" selection-start-column="27" selection-end-line="134" selection-end-column="37" />
+        <state relative-caret-position="130">
+          <caret line="129" column="60" lean-forward="true" selection-start-line="129" selection-start-column="60" selection-end-line="129" selection-end-column="60" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-509">
-          <caret line="110" selection-start-line="110" selection-end-line="111" selection-end-column="55" />
+        <state relative-caret-position="325">
+          <caret line="122" column="39" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="39" />
           <folding>
             <element signature="e#7022#7023#0" expanded="true" />
             <element signature="e#7068#7069#0" expanded="true" />
@@ -865,20 +911,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="209" column="33" selection-start-line="209" selection-start-column="19" selection-end-line="209" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/5.1.3.RELEASE/spring-aop-5.1.3.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/org/springframework/ui/Model.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/IExamRecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/mapper/ExamRecordMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/system/ExamRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/service/ExamRecordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1850">
+          <caret line="89" column="9" lean-forward="true" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examRecord/domain/ExamRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-spring/1.4.0/shiro-spring-1.4.0-sources.jar!/org/apache/shiro/spring/security/interceptor/AopAllianceAnnotationsAuthorizingMethodInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/5.1.3.RELEASE/spring-aop-5.1.3.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/5.1.3.RELEASE/spring-aop-5.1.3.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="472" selection-start-line="472" selection-end-line="472" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/user/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="33" column="80" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0-sources.jar!/org/apache/shiro/authz/aop/AuthorizingMethodInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/selectPaper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        <state relative-caret-position="125">
+          <caret line="14" column="71" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="71" />
+          <folding>
+            <element signature="e#1039#1045#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="258" column="54" lean-forward="true" selection-start-line="258" selection-start-column="54" selection-end-line="258" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6329#6340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/domain/ExamList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="45" column="17" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="17" />
+          <folding>
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/tbSubject/domain/TbSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="36" column="87" lean-forward="true" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
+          <folding>
+            <element signature="e#274#280#0" expanded="true" />
+            <element signature="e#280#286#0" expanded="true" />
+            <element signature="e#286#292#0" expanded="true" />
+            <element signature="e#292#298#0" expanded="true" />
+            <element signature="e#298#304#0" expanded="true" />
+            <element signature="e#304#310#0" expanded="true" />
+            <element signature="e#310#316#0" expanded="true" />
+            <element signature="e#316#322#0" expanded="true" />
+            <element signature="e#348#354#0" expanded="true" />
+            <element signature="e#354#360#0" expanded="true" />
+            <element signature="e#360#366#0" expanded="true" />
+            <element signature="e#366#372#0" expanded="true" />
+            <element signature="e#372#378#0" expanded="true" />
+            <element signature="e#378#384#0" expanded="true" />
+            <element signature="e#384#390#0" expanded="true" />
+            <element signature="e#390#396#0" expanded="true" />
+            <element signature="e#396#402#0" expanded="true" />
+            <element signature="e#402#408#0" expanded="true" />
+            <element signature="e#408#414#0" expanded="true" />
+            <element signature="e#414#420#0" expanded="true" />
+            <element signature="e#420#426#0" expanded="true" />
+            <element signature="e#426#432#0" expanded="true" />
+            <element signature="e#432#438#0" expanded="true" />
+            <element signature="e#438#444#0" expanded="true" />
+            <element signature="e#460#466#0" expanded="true" />
+            <element signature="e#466#472#0" expanded="true" />
+            <element signature="e#472#478#0" expanded="true" />
+            <element signature="e#478#484#0" expanded="true" />
+            <element signature="e#484#490#0" expanded="true" />
+            <element signature="n#style#0;n#font#0;n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#543#549#0" expanded="true" />
+            <element signature="e#549#555#0" expanded="true" />
+            <element signature="e#555#561#0" expanded="true" />
+            <element signature="e#561#567#0" expanded="true" />
+            <element signature="e#567#573#0" expanded="true" />
+            <element signature="e#573#579#0" expanded="true" />
+            <element signature="e#579#585#0" expanded="true" />
+            <element signature="e#585#591#0" expanded="true" />
+            <element signature="e#591#597#0" expanded="true" />
+            <element signature="e#597#603#0" expanded="true" />
+            <element signature="e#603#609#0" expanded="true" />
+            <element signature="e#609#615#0" expanded="true" />
+            <element signature="e#615#621#0" expanded="true" />
+            <element signature="e#639#645#0" expanded="true" />
+            <element signature="e#645#651#0" expanded="true" />
+            <element signature="e#651#657#0" expanded="true" />
+            <element signature="e#657#663#0" expanded="true" />
+            <element signature="e#663#669#0" expanded="true" />
+            <element signature="n#style#0;n#font#1;n#p#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#786#792#0" expanded="true" />
+            <element signature="e#792#798#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

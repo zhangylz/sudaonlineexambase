@@ -15,6 +15,7 @@ public class TbSubject extends BaseEntity
         {
 private static final long serialVersionUID=1L;
 
+public Integer subId;
 /** 题号 */
 @Excel(name = "题号", prompt = "题号")
 private Integer subjectID;
@@ -42,6 +43,10 @@ private String subjectParse;
 /** 课程ID */
 @Excel(name = "课程ID", prompt = "课程ID")
 private Integer courseId;
+
+public void setSubId(Integer id) { this.subId = id;}
+
+public  Integer getSubId() { return this.subId;}
 
 public void setSubjectID(Integer subjectID)
         {

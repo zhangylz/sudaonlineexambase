@@ -3,9 +3,12 @@ package com.ruoyi.project.system.examList.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.ruoyi.common.utils.ServletUtils;
 import com.ruoyi.common.utils.security.ShiroUtils;
 import com.ruoyi.project.system.course.domain.Course;
 import com.ruoyi.project.system.course.service.ICourseService;
+import com.ruoyi.project.system.examRecord.domain.ExamRecord;
+import com.ruoyi.project.system.examRecord.service.IExamRecordService;
 import com.ruoyi.project.system.tbSubject.domain.TbSubject;
 import com.ruoyi.project.system.tbSubject.service.ITbSubjectService;
 import com.ruoyi.project.system.user.domain.User;
@@ -14,11 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import com.ruoyi.framework.aspectj.lang.annotation.Log;
 import com.ruoyi.framework.aspectj.lang.enums.BusinessType;
 import com.ruoyi.project.system.examList.domain.ExamList;
@@ -28,6 +27,9 @@ import com.ruoyi.framework.web.page.TableDataInfo;
 import com.ruoyi.framework.web.domain.AjaxResult;
 import com.ruoyi.common.utils.poi.ExcelUtil;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletResponse;
+import javax.swing.plaf.synth.SynthTextAreaUI;
 
 /**
  * 考试列 信息操作处理
@@ -47,7 +49,9 @@ public class ExamListController extends BaseController
 	private ICourseService courseService;
 	@Autowired
 	private ITbSubjectService tbSubjectService;
-	
+	@Autowired
+	private IExamRecordService examRecordService;
+
 	@RequiresPermissions("system:examList:view")
 	@GetMapping()
 	public String examList()
@@ -208,16 +212,54 @@ public class ExamListController extends BaseController
 
 	@RequiresPermissions("system:examList:view:student")
 	@PostMapping("/getDetailPaper")
-	@ResponseBody
-	public String getDetailPaper(ModelMap mmap)
+	public String getDetailPaper(@ModelAttribute ExamList examList, Model model)
 	{
-		//String str = mmap.get("postIds").toString();
-//		mmap.put("roles", roleService.selectRoleAll());
-//		mmap.put("posts", postService.selectPostAll());
-//		ExamList list = examListService.selectExamListById(id);
-//		model.addAttribute("questions", list.getQuestions());
-//		model.addAttribute("user", ShiroUtils.getSysUser());
-//		model.addAttribute("paperId", id);
+		System.out.println(examList);
+		ExamList list = examListService.selectExamListById(examList.getId());
+		String questions = list.getQuestions();
+		String [] _listStr = questions.split("\\|");
+		List<TbSubject> listSubject = new ArrayList<TbSubject>();
+		for (int j = 0; j < _listStr.length; j++) {
+			Integer subjectId = Integer.valueOf(_listStr[j]);
+			listSubject.add(tbSubjectService.selectTbSubjectById(subjectId));
+		}
+
+		model.addAttribute("questions", listSubject);
+		model.addAttribute("user", ShiroUtils.getSysUser());
+		model.addAttribute("paperId", examList.getId());
+		model.addAttribute("paperName", examList.getName());
 		return  prefix + "/paper";
 	}
+
+	@RequiresPermissions("system:examList:view:student")
+	@GetMapping("/getDetailPaper")
+	public String getDetailPaperGet(Model model)
+	{
+		User user = ShiroUtils.getSysUser();
+		ExamRecord examRecord = examRecordService.selectExamRecordByUserId(user.getUserId().intValue());
+		if (examRecord == null) {
+			List<ExamList> list = examListService.selectExamListList(null);
+			model.addAttribute("examList", list);
+			return prefix + "/selectPaper";
+		} else {
+			ExamList examlist = examListService.selectExamListById(examRecord.getExamId());
+			String[] listStr = examlist.getQuestions().split("\\|");
+			List<TbSubject> _listSubject = new ArrayList<TbSubject>() {
+			};
+			for (int i = 0; i < listStr.length; i++) {
+				Integer subjectId = Integer.valueOf(listStr[i]);
+				TbSubject tbSubject = tbSubjectService.selectTbSubjectById(subjectId);
+				tbSubject.setSubId(i+1);
+				_listSubject.add(tbSubject);
+			}
+
+			model.addAttribute("paperName", examlist.getName());
+			model.addAttribute("questions", _listSubject);
+			model.addAttribute("user", ShiroUtils.getSysUser());
+			model.addAttribute("paperId", examlist.getId());
+			return prefix + "/paper";
+		}
+	}
+
+
 }
