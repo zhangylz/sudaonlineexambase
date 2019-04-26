@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+            <state relative-caret-position="325">
+              <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
               <folding>
                 <element signature="e#274#280#0" expanded="true" />
                 <element signature="e#280#286#0" expanded="true" />
@@ -509,7 +509,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556268149630" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556268884763" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -560,12 +560,12 @@
       <workItem from="1554950475571" duration="14970000" />
       <workItem from="1555128837712" duration="10012000" />
       <workItem from="1555163508660" duration="2374000" />
-      <workItem from="1556092833668" duration="31191000" />
+      <workItem from="1556092833668" duration="31924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100321000" />
+    <option name="totallyTimeSpent" value="101054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -590,7 +590,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.34019503" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8017058" visible="true" weight="0.21343446" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8017058" visible="true" weight="0.30877572" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7745203" weight="0.22643554" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1055,8 +1055,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+        <state relative-caret-position="325">
+          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
           <folding>
             <element signature="e#274#280#0" expanded="true" />
             <element signature="e#280#286#0" expanded="true" />

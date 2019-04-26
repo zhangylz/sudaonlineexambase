@@ -21,22 +21,14 @@
                 <div>
                     [<span th:text="${gw.subId}"></span>]. <span th:text="${gw.subjectTitle }"></span>
                 </div>
-                <div class="radio-box">
-                    <input name="A" type="radio"  th:id="'A' + ${gw.subId}"  th:value="A">
-                    A. <span th:text="${gw.subjectOptionA }"></span>
-                </div><br/>
-                <div class="radio-box">
-                    <input name="B" type="radio"  th:id="'B' + ${gw.subId}" th:value="B">
-                    B. <span th:text="${gw.subjectOptionB }"></span>
-                </div><br/>
-                <div class="radio-box">
-                    <input name="C" type="radio"  th:id="'C' + ${gw.subId}"  th:value="C">
-                    C. <span th:text="${gw.subjectOptionC }"></span>
-                </div><br/>
-                <div class="radio-box">
-                    <input name="D" type="radio"  th:id="'D' + ${gw.subId}"  th:value="D">
-                    D. <span th:text="${gw.subjectOptionD }"></span>
-                </div>
+                <input th:name="${gw.subId}" type="radio"  th:id="'A' + ${gw.subId}"  th:value="A" th:radiogroup="${gw.subId}">
+                A. <span th:text="${gw.subjectOptionA }"></span><br/>
+                <input th:name="${gw.subId}" type="radio"  th:id="'B' + ${gw.subId}" th:value="B" th:radiogroup="${gw.subId}">
+                B. <span th:text="${gw.subjectOptionB }"></span><br/>
+                <input th:name="${gw.subId}" type="radio"  th:id="'C' + ${gw.subId}"  th:value="C" th:radiogroup="${gw.subId}">
+                C. <span th:text="${gw.subjectOptionC }"></span><br/>
+                <input th:name="${gw.subId}" type="radio"  th:id="'D' + ${gw.subId}"  th:value="D" th:radiogroup="${gw.subId}">
+                D. <span th:text="${gw.subjectOptionD }"></span><br/><br/>
             </div>
             <button class="btn btn-primary" type="submit">交卷</button>
         </form>
