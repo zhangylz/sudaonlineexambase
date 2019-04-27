@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b26e8bf-5b73-4d10-92bc-33bd5a835546" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/system/examList/selectPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/system/examList/selectPaper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/system/examList/paper.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/system/examList/paper.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/system/examList/selectPaper.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/system/examList/selectPaper.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="83" column="58" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
+            <state relative-caret-position="395">
+              <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
               <folding>
                 <element signature="e#274#280#0" expanded="true" />
                 <element signature="e#280#286#0" expanded="true" />
@@ -125,15 +120,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/user/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="215" column="67" lean-forward="true" selection-start-line="215" selection-start-column="29" selection-end-line="215" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/selectPaper.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
@@ -157,6 +143,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/user/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="188" column="67" selection-start-line="188" selection-start-column="52" selection-end-line="188" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -169,8 +164,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>post</find>
-      <find>hello  world.....</find>
       <find>doSubmit</find>
       <find>form-examList-add</find>
       <find>selectpar</find>
@@ -199,6 +192,8 @@
       <find>selectExamRecordByUserId</find>
       <find>userid</find>
       <find>status</find>
+      <find>sex</find>
+      <find>checked</find>
     </findStrings>
     <dirStrings>
       <dir>F:\classdesign\project\sudaonlineexambase\src\main\java\com\ruoyi\project\system\ceshi</dir>
@@ -363,7 +358,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556346370183" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556349421982" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -420,12 +415,12 @@
       <workItem from="1555163508660" duration="2374000" />
       <workItem from="1556092833668" duration="37989000" />
       <workItem from="1556278604933" duration="4511000" />
-      <workItem from="1556283604818" duration="4022000" />
+      <workItem from="1556283604818" duration="7124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115652000" />
+    <option name="totallyTimeSpent" value="118754000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,8 +435,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8943662" visible="true" weight="0.21268657" />
-      <window_info id="Structure" order="1" sideWeight="0.1056338" side_tool="true" visible="true" weight="0.21268657" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.87458193" visible="true" weight="0.21268657" />
+      <window_info id="Structure" order="1" sideWeight="0.12541807" side_tool="true" visible="true" weight="0.21268657" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -450,7 +445,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.34019503" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8017058" visible="true" weight="0.23076923" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8017058" visible="true" weight="0.35211268" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7745203" weight="0.17334779" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -874,13 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/user/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="124" column="87" selection-start-line="124" selection-start-column="74" selection-end-line="124" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -891,10 +879,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/user/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="188" column="67" selection-start-line="188" selection-start-column="52" selection-end-line="188" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/examList/paper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="83" column="58" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
+        <state relative-caret-position="395">
+          <caret line="88" column="41" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
           <folding>
             <element signature="e#274#280#0" expanded="true" />
             <element signature="e#280#286#0" expanded="true" />

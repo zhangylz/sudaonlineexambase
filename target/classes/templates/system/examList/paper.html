@@ -21,13 +21,13 @@
                 <div>
                     [<span th:text="${gw.subId}"></span>]. <span th:text="${gw.subjectTitle }"></span>
                 </div>
-                <input th:name="${gw.subId}" type="radio"  th:id="'A' + ${gw.subId}"  th:value="A" th:radiogroup="${gw.subId}">
+                <input th:name="${gw.subId}" type="radio"  th:checked="false" th:id="'A' + ${gw.subId}"  th:value="A" th:radiogroup="${gw.subId}">
                 A. <span th:text="${gw.subjectOptionA }"></span><br/>
-                <input th:name="${gw.subId}" type="radio"  th:id="'B' + ${gw.subId}" th:value="B" th:radiogroup="${gw.subId}">
+                <input th:name="${gw.subId}" type="radio"  th:checked="false" th:id="'B' + ${gw.subId}" th:value="B" th:radiogroup="${gw.subId}">
                 B. <span th:text="${gw.subjectOptionB }"></span><br/>
-                <input th:name="${gw.subId}" type="radio"  th:id="'C' + ${gw.subId}"  th:value="C" th:radiogroup="${gw.subId}">
+                <input th:name="${gw.subId}" type="radio" th:checked="false" th:id="'C' + ${gw.subId}"  th:value="C" th:radiogroup="${gw.subId}">
                 C. <span th:text="${gw.subjectOptionC }"></span><br/>
-                <input th:name="${gw.subId}" type="radio"  th:id="'D' + ${gw.subId}"  th:value="D" th:radiogroup="${gw.subId}">
+                <input th:name="${gw.subId}" type="radio" th:checked="false" th:id="'D' + ${gw.subId}"  th:value="D" th:radiogroup="${gw.subId}">
                 D. <span th:text="${gw.subjectOptionD }"></span><br/><br/>
             </div>
         </form>
@@ -76,17 +76,17 @@
     var prefix = ctx + "system/examList";
     function submitHandler() {
         var answerList = "";
-        var array = ["A", "B", "C", "D"];
-        for (var i = 1 ; i < 11; i++) {
-            var bFind = false;
-            for (var j = 0; j < 4; j++) {
-                var _inputName = array[j] + i;
-                if ($("input[id=_inputName]").is(':selected') == true) {
-                    answerList += array[i];
-                    bFind = true;
+        for (var i = 1; i <11; i++) {
+            var input=document.getElementsByName("" + i);
+            var find = false;
+            $.each(input, function () {
+                var input = $(this);
+                if (input.is(':checked') == true) {
+                    answerList += input.val();
+                    find = true;
                 }
-            }
-            if (!bFind) answerList += "N";
+            });
+            if (!find) answerList += 'N';
             if (i < 10) {
                 answerList += "|";
             }

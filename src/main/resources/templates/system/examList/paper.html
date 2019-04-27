@@ -15,19 +15,19 @@
     <div class="data_content">
         <strong><big>单选题</big></strong>（每题10分，答错不得分）<br/><br/>
         <form id="myForm" action="@{/system/examList/addExam}" method="post">
-            <input type="hidden" id="studentId" name="exam.student.id" value="${user.userId }"/>
-            <input type="hidden" id="paperId" name="exam.paper.id" value="${paperId }"/>
+            <input type="hidden" id="studentId" name="exam.student.id" th:value="${user.userId }"/>
+            <input type="hidden" id="paperId" name="exam.paper.id" th:value="${paperId }"/>
             <div id="questionList" class="weui-cell weui-media-box_appmsg"  th:each="gw:${questions }">
                 <div>
                     [<span th:text="${gw.subId}"></span>]. <span th:text="${gw.subjectTitle }"></span>
                 </div>
-                <input th:name="${gw.subId}" type="radio"  th:id="'A' + ${gw.subId}"  th:value="A" th:radiogroup="${gw.subId}">
+                <input th:name="${gw.subId}" type="radio"  th:checked="false" th:id="'A' + ${gw.subId}"  th:value="A" th:radiogroup="${gw.subId}">
                 A. <span th:text="${gw.subjectOptionA }"></span><br/>
-                <input th:name="${gw.subId}" type="radio"  th:id="'B' + ${gw.subId}" th:value="B" th:radiogroup="${gw.subId}">
+                <input th:name="${gw.subId}" type="radio"  th:checked="false" th:id="'B' + ${gw.subId}" th:value="B" th:radiogroup="${gw.subId}">
                 B. <span th:text="${gw.subjectOptionB }"></span><br/>
-                <input th:name="${gw.subId}" type="radio"  th:id="'C' + ${gw.subId}"  th:value="C" th:radiogroup="${gw.subId}">
+                <input th:name="${gw.subId}" type="radio" th:checked="false" th:id="'C' + ${gw.subId}"  th:value="C" th:radiogroup="${gw.subId}">
                 C. <span th:text="${gw.subjectOptionC }"></span><br/>
-                <input th:name="${gw.subId}" type="radio"  th:id="'D' + ${gw.subId}"  th:value="D" th:radiogroup="${gw.subId}">
+                <input th:name="${gw.subId}" type="radio" th:checked="false" th:id="'D' + ${gw.subId}"  th:value="D" th:radiogroup="${gw.subId}">
                 D. <span th:text="${gw.subjectOptionD }"></span><br/><br/>
             </div>
         </form>
@@ -75,20 +75,29 @@
 
     var prefix = ctx + "system/examList";
     function submitHandler() {
-        var data = $("#myForm").serializeArray();
         var answerList = "";
-        for (var i = 1 ; i < 11; i++) {
-            var inputName = "" + i;
-            answerList += $("input[name=inputName]:checked").val();
+        for (var i = 1; i <11; i++) {
+            var input=document.getElementsByName("" + i);
+            var find = false;
+            $.each(input, function () {
+                var input = $(this);
+                if (input.is(':checked') == true) {
+                    answerList += input.val();
+                    find = true;
+                }
+            });
+            if (!find) answerList += 'N';
             if (i < 10) {
                 answerList += "|";
             }
         }
 
-        data.push({"name": "record", "value": answerList});
-        data.push({"name": "examId", "value": $("#paperId").val().trim()});
-        data.push({"name": "userId", "value": $("#studentId").val().trim()});
-        $.operate.saveTab(prefix + "/addExam", data);
+        $.post(prefix + "/addExamRecord", {"record":answerList, "examId":parseInt($("#paperId").val().trim()), "userId":$("#studentId").val()}, function (data) {
+            if (data) {
+                alert("成绩 " + data.score);
+                closeItem();
+            }
+        }, "json");
     }
     window.setInterval("showCount()",1000);
 </script>
