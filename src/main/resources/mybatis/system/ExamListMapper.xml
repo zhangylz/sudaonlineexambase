@@ -12,10 +12,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <result property="status"    column="status"    />
         <result property="courseId"  column="courseId" />
         <result property="questions"  column="questions" />
+        <result property="answers"  column="answers" />
     </resultMap>
 	
 	<sql id="selectExamListVo">
-        select id, name, startTime, endTIme, status, questions from sys_exam_list
+        select id, name, startTime, endTIme, status, questions, answers from sys_exam_list
     </sql>
 	
     <select id="selectExamListList" parameterType="ExamList" resultMap="ExamListResult">
@@ -43,6 +44,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<if test="status != null  ">status,</if>
             <if test="courseId != null ">courseId,</if>
             <if test="questions != null ">questions,</if>
+            <if test="answers != null ">answers,</if>
          </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
 			<if test="name != null  and name != ''  ">#{name},</if>
@@ -51,6 +53,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			<if test="status != null  ">#{status},</if>
             <if test="courseId != null ">#{courseId},</if>
             <if test="questions != null ">#{questions},</if>
+            <if test="answers != null ">#{answers},</if>
          </trim>
     </insert>
 	 

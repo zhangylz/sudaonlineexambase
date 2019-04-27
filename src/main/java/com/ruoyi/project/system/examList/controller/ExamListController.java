@@ -136,7 +136,9 @@ public class ExamListController extends BaseController
 		examList.setName(course.getName());
 		// random subject list.
 		String questionListStr = this.randomQuestionList(courseId, 10);
-		examList.setQuestions(questionListStr);
+		String [] strs = questionListStr.split("\\:");
+		examList.setQuestions(strs[0]);
+		examList.setAnswers(strs[1]);
 		examList.setCourseId(courseId.longValue());
 		return toAjax(examListService.insertExamList(examList));
 	}
@@ -147,12 +149,24 @@ public class ExamListController extends BaseController
 		tbSubject.setCourseId(courseId);
 		List<TbSubject> tbList = tbSubjectService.selectTbSubjectList(tbSubject);
 		String str = "";
-		for (int i = 0; i < tbList.size(); i++) {
-			if (i < maxLen) {
-				str += tbList.get(i).getSubjectID() + "|";
+		String ans = "";
+		int i = 0;
+		if (maxLen > tbList.size()) maxLen = tbList.size();
+		while(i < maxLen) {
+			int index = (int)Math.floor(Math.random() * tbList.size()) - 1;
+			if (index < 0) index = 0;
+			str += tbList.get(i).getSubjectID();
+			ans += tbList.get(i).getSubjectAnswer();
+
+			if (i < maxLen - 1) {
+				str += '|';
+				ans += '|';
 			}
+			tbList.remove(index);
+			i++;
 		}
-		return str;
+
+		return str + ":" + ans;
 	}
 
 	/**
@@ -218,6 +232,9 @@ public class ExamListController extends BaseController
 	{
 		ExamRecord _examRecord = new ExamRecord();
 		_examRecord.setScore(100);
+		// get answers;
+		ExamList examList = examListService.selectExamListById(examrecord.getExamId());
+		System.out.println(examList);
  		System.out.println(examrecord);
 		return _examRecord;
 	}
