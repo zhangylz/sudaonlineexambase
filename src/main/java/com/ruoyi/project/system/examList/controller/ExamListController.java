@@ -212,6 +212,17 @@ public class ExamListController extends BaseController
 	}
 
 	@RequiresPermissions("system:examList:view:student")
+	@PostMapping("addExamRecord")
+	@ResponseBody
+	public ExamRecord addExamRecord(@ModelAttribute ExamRecord examrecord)
+	{
+		ExamRecord _examRecord = new ExamRecord();
+		_examRecord.setScore(100);
+ 		System.out.println(examrecord);
+		return _examRecord;
+	}
+
+	@RequiresPermissions("system:examList:view:student")
 	@PostMapping("/getDetailPaper")
 	@ResponseBody
 	public PaperInfo getDetailPaper(@ModelAttribute ExamList examList)
