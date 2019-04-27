@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" line="238" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" line="267" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b26e8bf-5b73-4d10-92bc-33bd5a835546" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/domain/ExamList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/domain/ExamList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/system/ExamListMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/system/ExamListMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +19,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="167" column="4" selection-start-line="167" selection-start-column="4" selection-end-line="167" selection-end-column="4" />
+            <state relative-caret-position="264">
+              <caret line="242" column="49" selection-start-line="242" selection-start-column="49" selection-end-line="242" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/system/ExamRecordMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="58" column="32" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -425,12 +431,12 @@
       <workItem from="1556092833668" duration="37989000" />
       <workItem from="1556278604933" duration="4511000" />
       <workItem from="1556283604818" duration="7269000" />
-      <workItem from="1556349566211" duration="1638000" />
+      <workItem from="1556349566211" duration="3054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120537000" />
+    <option name="totallyTimeSpent" value="121953000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,8 +451,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.87458193" visible="true" weight="0.21481876" />
-      <window_info id="Structure" order="1" sideWeight="0.12541807" side_tool="true" visible="true" weight="0.21481876" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9017038" visible="true" weight="0.21481876" />
+      <window_info id="Structure" order="1" sideWeight="0.0982962" side_tool="true" visible="true" weight="0.21481876" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -455,8 +461,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.34019503" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8017058" visible="true" weight="0.35211268" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7745203" weight="0.17334779" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8017058" weight="0.28277355" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7745203" visible="true" weight="0.17334779" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989339" weight="0.32936078" />
@@ -552,6 +558,36 @@
           <line>37</line>
           <properties />
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java</url>
+          <line>237</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java</url>
+          <line>238</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java</url>
+          <line>241</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java</url>
+          <line>242</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java</url>
+          <line>243</line>
+          <properties />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -774,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/system/ExamRecordMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/ruoyi/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3150">
@@ -944,10 +973,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/system/ExamRecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ruoyi/project/system/examList/controller/ExamListController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="167" column="4" selection-start-line="167" selection-start-column="4" selection-end-line="167" selection-end-column="4" />
+        <state relative-caret-position="264">
+          <caret line="242" column="49" selection-start-line="242" selection-start-column="49" selection-end-line="242" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

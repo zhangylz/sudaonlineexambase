@@ -230,13 +230,42 @@ public class ExamListController extends BaseController
 	@ResponseBody
 	public ExamRecord addExamRecord(@ModelAttribute ExamRecord examrecord)
 	{
-		ExamRecord _examRecord = new ExamRecord();
-		_examRecord.setScore(100);
 		// get answers;
 		ExamList examList = examListService.selectExamListById(examrecord.getExamId());
-		System.out.println(examList);
- 		System.out.println(examrecord);
-		return _examRecord;
+		String answers = examList.getAnswers();
+		String stuRecord = examrecord.getRecord();
+
+		String [] answerss = answers.split("\\|");
+		String [] stuRecords =  stuRecord.split("\\|");
+		int  rightCnt = 0;
+		Integer score = 0;
+		for (int i = 0; i < answerss.length; i++) {
+			if (answerss[i].equals(stuRecords[i])) {
+				rightCnt++;
+			}
+		}
+		score = rightCnt * 10;
+		examrecord.setScore(score);
+
+		// save
+		List<ExamRecord>  examRecordList = examRecordService.selectExamRecordList(null);
+		int recordId = -1;
+		for (int  i = 0; i < examRecordList.size(); i++) {
+			ExamRecord examRecordTemp = examRecordList.get(i);
+			if (examRecordTemp.getUserId() == examrecord.getUserId() &&
+				examRecordTemp.getExamId() == examrecord.getExamId()
+			) {
+				recordId = examRecordTemp.getId();
+				break;
+			}
+		}
+		if (recordId < 0) {
+
+		} else {
+			examrecord.setId(recordId);
+			examRecordService.updateExamRecord(examrecord);
+		}
+		return examrecord;
 	}
 
 	@RequiresPermissions("system:examList:view:student")
