@@ -11,38 +11,11 @@
  Target Server Version : 80014
  File Encoding         : 65001
 
- Date: 30/03/2019 18:35:34
+ Date: 10/05/2019 18:51:41
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
--- Table structure for ceshi
--- ----------------------------
-DROP TABLE IF EXISTS `ceshi`;
-CREATE TABLE `ceshi`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
-  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '姓名',
-  `passwrod` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '密码',
-  `genxin` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '更新时间',
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '测试表格' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of ceshi
--- ----------------------------
-INSERT INTO `ceshi` VALUES (1, 'ssbe', '1', '1');
-INSERT INTO `ceshi` VALUES (2, '2', '22', '2');
-INSERT INTO `ceshi` VALUES (3, '1', '1', '1');
-INSERT INTO `ceshi` VALUES (4, '1', '1', '1');
-INSERT INTO `ceshi` VALUES (5, '2', '2', '2');
-INSERT INTO `ceshi` VALUES (6, '3', '3', '3');
-INSERT INTO `ceshi` VALUES (7, '2', '2', '2');
-INSERT INTO `ceshi` VALUES (8, '3', '3', '3');
-INSERT INTO `ceshi` VALUES (9, '1', '1', '1');
-INSERT INTO `ceshi` VALUES (10, '2', '2', '2');
-INSERT INTO `ceshi` VALUES (11, '1', '1', '1');
 
 -- ----------------------------
 -- Table structure for qrtz_blob_triggers
@@ -174,7 +147,7 @@ CREATE TABLE `qrtz_scheduler_state`  (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', '20180621-0954071553940605068', 1553942122959, 15000);
+INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', '20180621-0954071557236851793', 1557315402143, 15000);
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -243,8 +216,8 @@ CREATE TABLE `qrtz_triggers`  (
 -- ----------------------------
 -- Records of qrtz_triggers
 -- ----------------------------
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', '__TASK_CLASS_NAME__1', 'DEFAULT', '__TASK_CLASS_NAME__1', 'DEFAULT', NULL, 1552371570000, -1, 5, 'PAUSED', 'CRON', 1552371562000, 0, NULL, 2, 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400135F5F5441534B5F50524F504552544945535F5F73720028636F6D2E72756F79692E70726F6A6563742E6D6F6E69746F722E6A6F622E646F6D61696E2E4A6F6200000000000000010200084C000E63726F6E45787072657373696F6E7400124C6A6176612F6C616E672F537472696E673B4C00086A6F6247726F757071007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C00076A6F624E616D6571007E00094C000A6D6574686F644E616D6571007E00094C000C6D6574686F64506172616D7371007E00094C000D6D697366697265506F6C69637971007E00094C000673746174757371007E000978720029636F6D2E72756F79692E6672616D65776F726B2E7765622E646F6D61696E2E42617365456E7469747900000000000000010200074C0008637265617465427971007E00094C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C0006706172616D7371007E00034C000672656D61726B71007E00094C000B73656172636856616C756571007E00094C0008757064617465427971007E00094C000A75706461746554696D6571007E000C787074000561646D696E7372000E6A6176612E7574696C2E44617465686A81014B59741903000078707708000001622CDE29E0787074000070707074000E302F3130202A202A202A202A203F740018E7B3BBE7BB9FE9BB98E8AEA4EFBC88E697A0E58F82EFBC897372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000672795461736B74000A72794E6F506172616D7374000074000133740001317800);
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', '__TASK_CLASS_NAME__2', 'DEFAULT', '__TASK_CLASS_NAME__2', 'DEFAULT', NULL, 1552371580000, -1, 5, 'PAUSED', 'CRON', 1552371562000, 0, NULL, 2, 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400135F5F5441534B5F50524F504552544945535F5F73720028636F6D2E72756F79692E70726F6A6563742E6D6F6E69746F722E6A6F622E646F6D61696E2E4A6F6200000000000000010200084C000E63726F6E45787072657373696F6E7400124C6A6176612F6C616E672F537472696E673B4C00086A6F6247726F757071007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C00076A6F624E616D6571007E00094C000A6D6574686F644E616D6571007E00094C000C6D6574686F64506172616D7371007E00094C000D6D697366697265506F6C69637971007E00094C000673746174757371007E000978720029636F6D2E72756F79692E6672616D65776F726B2E7765622E646F6D61696E2E42617365456E7469747900000000000000010200074C0008637265617465427971007E00094C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C0006706172616D7371007E00034C000672656D61726B71007E00094C000B73656172636856616C756571007E00094C0008757064617465427971007E00094C000A75706461746554696D6571007E000C787074000561646D696E7372000E6A6176612E7574696C2E44617465686A81014B59741903000078707708000001622CDE29E0787074000070707074000E302F3230202A202A202A202A203F740018E7B3BBE7BB9FE9BB98E8AEA4EFBC88E69C89E58F82EFBC897372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000672795461736B7400087279506172616D73740002727974000133740001317800);
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', '__TASK_CLASS_NAME__1', 'DEFAULT', '__TASK_CLASS_NAME__1', 'DEFAULT', NULL, 1552371570000, -1, 5, 'PAUSED', 'CRON', 1552371562000, 0, NULL, 0, 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400135F5F5441534B5F50524F504552544945535F5F73720028636F6D2E72756F79692E70726F6A6563742E6D6F6E69746F722E6A6F622E646F6D61696E2E4A6F6200000000000000010200084C000E63726F6E45787072657373696F6E7400124C6A6176612F6C616E672F537472696E673B4C00086A6F6247726F757071007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C00076A6F624E616D6571007E00094C000A6D6574686F644E616D6571007E00094C000C6D6574686F64506172616D7371007E00094C000D6D697366697265506F6C69637971007E00094C000673746174757371007E000978720029636F6D2E72756F79692E6672616D65776F726B2E7765622E646F6D61696E2E42617365456E7469747900000000000000010200074C0008637265617465427971007E00094C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C0006706172616D7371007E00034C000672656D61726B71007E00094C000B73656172636856616C756571007E00094C0008757064617465427971007E00094C000A75706461746554696D6571007E000C787074000561646D696E7372000E6A6176612E7574696C2E44617465686A81014B59741903000078707708000001622CDE29E0787074000070707074000E302F3130202A202A202A202A203F740018E7B3BBE7BB9FE9BB98E8AEA4EFBC88E697A0E58F82EFBC897372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000174000672795461736B74000A72794E6F506172616D7374000074000130740001317800);
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', '__TASK_CLASS_NAME__2', 'DEFAULT', '__TASK_CLASS_NAME__2', 'DEFAULT', NULL, 1552371580000, -1, 5, 'PAUSED', 'CRON', 1552371562000, 0, NULL, 0, 0xACED0005737200156F72672E71756172747A2E4A6F62446174614D61709FB083E8BFA9B0CB020000787200266F72672E71756172747A2E7574696C732E537472696E674B65794469727479466C61674D61708208E8C3FBC55D280200015A0013616C6C6F77735472616E7369656E74446174617872001D6F72672E71756172747A2E7574696C732E4469727479466C61674D617013E62EAD28760ACE0200025A000564697274794C00036D617074000F4C6A6176612F7574696C2F4D61703B787001737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C770800000010000000017400135F5F5441534B5F50524F504552544945535F5F73720028636F6D2E72756F79692E70726F6A6563742E6D6F6E69746F722E6A6F622E646F6D61696E2E4A6F6200000000000000010200084C000E63726F6E45787072657373696F6E7400124C6A6176612F6C616E672F537472696E673B4C00086A6F6247726F757071007E00094C00056A6F6249647400104C6A6176612F6C616E672F4C6F6E673B4C00076A6F624E616D6571007E00094C000A6D6574686F644E616D6571007E00094C000C6D6574686F64506172616D7371007E00094C000D6D697366697265506F6C69637971007E00094C000673746174757371007E000978720029636F6D2E72756F79692E6672616D65776F726B2E7765622E646F6D61696E2E42617365456E7469747900000000000000010200074C0008637265617465427971007E00094C000A63726561746554696D657400104C6A6176612F7574696C2F446174653B4C0006706172616D7371007E00034C000672656D61726B71007E00094C000B73656172636856616C756571007E00094C0008757064617465427971007E00094C000A75706461746554696D6571007E000C787074000561646D696E7372000E6A6176612E7574696C2E44617465686A81014B59741903000078707708000001622CDE29E0787074000070707074000E302F3230202A202A202A202A203F740018E7B3BBE7BB9FE9BB98E8AEA4EFBC88E69C89E58F82EFBC897372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000000000000274000672795461736B7400087279506172616D73740002727974000130740001317800);
 
 -- ----------------------------
 -- Table structure for sys_config
@@ -262,13 +235,29 @@ CREATE TABLE `sys_config`  (
   `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`config_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 100 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '参数配置表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '参数配置表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_config
 -- ----------------------------
 INSERT INTO `sys_config` VALUES (1, '主框架页-默认皮肤样式名称', 'sys.index.skinName', 'skin-blue', 'Y', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '蓝色 skin-blue、绿色 skin-green、紫色 skin-purple、红色 skin-red、黄色 skin-yellow');
 INSERT INTO `sys_config` VALUES (2, '用户管理-账号初始密码', 'sys.user.initPassword', '123456', 'Y', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '初始化密码 123456');
+
+-- ----------------------------
+-- Table structure for sys_course
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_course`;
+CREATE TABLE `sys_course`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '课程号',
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '课程名',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '课程表' ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of sys_course
+-- ----------------------------
+INSERT INTO `sys_course` VALUES (1, '计算机');
+INSERT INTO `sys_course` VALUES (2, '数学');
 
 -- ----------------------------
 -- Table structure for sys_dept
@@ -322,7 +311,7 @@ CREATE TABLE `sys_dict_data`  (
   `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`dict_code`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 100 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '字典数据表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 101 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '字典数据表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_dict_data
@@ -353,6 +342,8 @@ INSERT INTO `sys_dict_data` VALUES (23, 8, '生成代码', '8', 'sys_oper_type',
 INSERT INTO `sys_dict_data` VALUES (24, 8, '清空数据', '9', 'sys_oper_type', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '清空操作');
 INSERT INTO `sys_dict_data` VALUES (25, 1, '成功', '0', 'sys_common_status', '', 'primary', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '正常状态');
 INSERT INTO `sys_dict_data` VALUES (26, 2, '失败', '1', 'sys_common_status', '', 'danger', 'N', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '停用状态');
+INSERT INTO `sys_dict_data` VALUES (100, 1, '计算机', '1', 'sys_course_name', '', 'default', 'Y', '0', 'admin', '2019-04-11 14:39:59', 'admin', '2019-04-11 14:49:10', '');
+INSERT INTO `sys_dict_data` VALUES (101, 2, '数学', '2', 'sys_course_name', '', 'default', 'Y', '0', 'admin', '2019-04-11 14:40:21', 'admin', '2019-04-11 14:49:16', '');
 
 -- ----------------------------
 -- Table structure for sys_dict_type
@@ -384,6 +375,7 @@ INSERT INTO `sys_dict_type` VALUES (6, '通知类型', 'sys_notice_type', '0', '
 INSERT INTO `sys_dict_type` VALUES (7, '通知状态', 'sys_notice_status', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '通知状态列表');
 INSERT INTO `sys_dict_type` VALUES (8, '操作类型', 'sys_oper_type', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '操作类型列表');
 INSERT INTO `sys_dict_type` VALUES (9, '系统状态', 'sys_common_status', '0', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '登录状态列表');
+INSERT INTO `sys_dict_type` VALUES (100, '课程名称', 'sys_course_name', '0', 'admin', '2019-04-11 14:38:30', '', NULL, '用户 标识 课程id');
 
 -- ----------------------------
 -- Table structure for sys_exam_list
@@ -395,13 +387,36 @@ CREATE TABLE `sys_exam_list`  (
   `startTime` datetime(0) NULL DEFAULT NULL COMMENT '开始时间',
   `endTIme` datetime(0) NULL DEFAULT NULL COMMENT '截止时间',
   `status` bigint(1) NULL DEFAULT NULL COMMENT '0:off 1:on',
+  `courseId` int(11) NULL DEFAULT NULL COMMENT '课程Id',
+  `questions` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '问题集(默认10题)',
+  `answers` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT 'answer',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '考试列表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 16 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '考试列表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_exam_list
 -- ----------------------------
-INSERT INTO `sys_exam_list` VALUES (1, '计算机基础题', '2019-03-30 10:00:00', '2019-05-06 23:59:59', 1);
+INSERT INTO `sys_exam_list` VALUES (16, '计算机', '2019-04-27 08:00:00', '2019-05-06 08:00:00', 1, 1, '1|2|3|8|9|10|12|13|17|19', 'C|D|A|A|C|B|C|B|D|C');
+
+-- ----------------------------
+-- Table structure for sys_exam_record
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_exam_record`;
+CREATE TABLE `sys_exam_record`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `user_id` int(11) NOT NULL COMMENT '用户Id',
+  `exam_id` int(11) NOT NULL COMMENT '考试Id',
+  `score` int(11) NULL DEFAULT NULL COMMENT '分数',
+  `record` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '答题记录',
+  `flag` int(1) NULL DEFAULT NULL COMMENT '1:完成 0:未开始',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 36 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '考试记录' ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of sys_exam_record
+-- ----------------------------
+INSERT INTO `sys_exam_record` VALUES (35, 1, 16, 10, 'C|N|N|N|N|N|N|N|N|N', NULL);
+INSERT INTO `sys_exam_record` VALUES (36, 100, 16, 70, 'C|D|A|A|C|D|C|B|B|D', NULL);
 
 -- ----------------------------
 -- Table structure for sys_job
@@ -423,13 +438,13 @@ CREATE TABLE `sys_job`  (
   `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '备注信息',
   PRIMARY KEY (`job_id`, `job_name`, `job_group`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 100 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '定时任务调度表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '定时任务调度表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_job
 -- ----------------------------
-INSERT INTO `sys_job` VALUES (1, 'ryTask', '系统默认（无参）', 'ryNoParams', '', '0/10 * * * * ?', '3', '1', '1', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
-INSERT INTO `sys_job` VALUES (2, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', '0/20 * * * * ?', '3', '1', '1', 'admin', '2018-03-16 11:33:00', 'ry', '2018-03-16 11:33:00', '');
+INSERT INTO `sys_job` VALUES (1, 'ryTask', '系统默认（无参）', 'ryNoParams', '', '0/10 * * * * ?', '0', '1', '1', 'admin', '2018-03-16 11:33:00', 'admin', '2019-04-11 10:58:38', '');
+INSERT INTO `sys_job` VALUES (2, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', '0/20 * * * * ?', '0', '1', '1', 'admin', '2018-03-16 11:33:00', 'admin', '2019-04-11 10:58:36', '');
 
 -- ----------------------------
 -- Table structure for sys_job_log
@@ -446,7 +461,61 @@ CREATE TABLE `sys_job_log`  (
   `exception_info` varchar(2000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '异常信息',
   `create_time` datetime(0) NULL DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`job_log_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '定时任务调度日志表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 50 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '定时任务调度日志表' ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of sys_job_log
+-- ----------------------------
+INSERT INTO `sys_job_log` VALUES (1, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:53:30');
+INSERT INTO `sys_job_log` VALUES (2, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：2毫秒', '0', '', '2019-04-11 10:53:35');
+INSERT INTO `sys_job_log` VALUES (3, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:53:40');
+INSERT INTO `sys_job_log` VALUES (4, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:53:40');
+INSERT INTO `sys_job_log` VALUES (5, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:53:44');
+INSERT INTO `sys_job_log` VALUES (6, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:53:50');
+INSERT INTO `sys_job_log` VALUES (7, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:54:00');
+INSERT INTO `sys_job_log` VALUES (8, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:54:00');
+INSERT INTO `sys_job_log` VALUES (9, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:54:10');
+INSERT INTO `sys_job_log` VALUES (10, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:54:20');
+INSERT INTO `sys_job_log` VALUES (11, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:54:20');
+INSERT INTO `sys_job_log` VALUES (12, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：2毫秒', '0', '', '2019-04-11 10:54:29');
+INSERT INTO `sys_job_log` VALUES (13, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:54:30');
+INSERT INTO `sys_job_log` VALUES (14, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:54:36');
+INSERT INTO `sys_job_log` VALUES (15, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:54:40');
+INSERT INTO `sys_job_log` VALUES (16, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:54:40');
+INSERT INTO `sys_job_log` VALUES (17, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:54:50');
+INSERT INTO `sys_job_log` VALUES (18, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:55:00');
+INSERT INTO `sys_job_log` VALUES (19, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:55:00');
+INSERT INTO `sys_job_log` VALUES (20, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:55:10');
+INSERT INTO `sys_job_log` VALUES (21, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:55:20');
+INSERT INTO `sys_job_log` VALUES (22, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:55:20');
+INSERT INTO `sys_job_log` VALUES (23, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:55:30');
+INSERT INTO `sys_job_log` VALUES (24, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：2毫秒', '0', '', '2019-04-11 10:55:40');
+INSERT INTO `sys_job_log` VALUES (25, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:55:40');
+INSERT INTO `sys_job_log` VALUES (26, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:55:50');
+INSERT INTO `sys_job_log` VALUES (27, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:56:00');
+INSERT INTO `sys_job_log` VALUES (28, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:56:00');
+INSERT INTO `sys_job_log` VALUES (29, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:56:10');
+INSERT INTO `sys_job_log` VALUES (30, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:56:20');
+INSERT INTO `sys_job_log` VALUES (31, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:56:20');
+INSERT INTO `sys_job_log` VALUES (32, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:56:30');
+INSERT INTO `sys_job_log` VALUES (33, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:56:40');
+INSERT INTO `sys_job_log` VALUES (34, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:56:40');
+INSERT INTO `sys_job_log` VALUES (35, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：2毫秒', '0', '', '2019-04-11 10:56:50');
+INSERT INTO `sys_job_log` VALUES (36, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:57:00');
+INSERT INTO `sys_job_log` VALUES (37, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:57:00');
+INSERT INTO `sys_job_log` VALUES (38, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:57:10');
+INSERT INTO `sys_job_log` VALUES (39, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:57:20');
+INSERT INTO `sys_job_log` VALUES (40, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:57:20');
+INSERT INTO `sys_job_log` VALUES (41, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:57:30');
+INSERT INTO `sys_job_log` VALUES (42, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:57:40');
+INSERT INTO `sys_job_log` VALUES (43, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:57:40');
+INSERT INTO `sys_job_log` VALUES (44, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：2毫秒', '0', '', '2019-04-11 10:57:50');
+INSERT INTO `sys_job_log` VALUES (45, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：3毫秒', '0', '', '2019-04-11 10:58:00');
+INSERT INTO `sys_job_log` VALUES (46, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:58:00');
+INSERT INTO `sys_job_log` VALUES (47, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：0毫秒', '0', '', '2019-04-11 10:58:10');
+INSERT INTO `sys_job_log` VALUES (48, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:58:20');
+INSERT INTO `sys_job_log` VALUES (49, 'ryTask', '系统默认（有参）', 'ryParams', 'ry', 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:58:20');
+INSERT INTO `sys_job_log` VALUES (50, 'ryTask', '系统默认（无参）', 'ryNoParams', NULL, 'ryTask 总共耗时：1毫秒', '0', '', '2019-04-11 10:58:30');
 
 -- ----------------------------
 -- Table structure for sys_logininfor
@@ -463,7 +532,7 @@ CREATE TABLE `sys_logininfor`  (
   `msg` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '提示消息',
   `login_time` datetime(0) NULL DEFAULT NULL COMMENT '访问时间',
   PRIMARY KEY (`info_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 177 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '系统访问记录' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 401 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '系统访问记录' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_logininfor
@@ -610,6 +679,166 @@ INSERT INTO `sys_logininfor` VALUES (238, 'admin', '127.0.0.1', '内网IP', 'Chr
 INSERT INTO `sys_logininfor` VALUES (239, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-03-30 18:33:48');
 INSERT INTO `sys_logininfor` VALUES (240, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-03-30 18:34:34');
 INSERT INTO `sys_logininfor` VALUES (241, 'js', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-03-30 18:34:47');
+INSERT INTO `sys_logininfor` VALUES (242, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-03-30 21:50:27');
+INSERT INTO `sys_logininfor` VALUES (243, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-03-30 21:51:07');
+INSERT INTO `sys_logininfor` VALUES (244, 'js', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '密码输入错误1次', '2019-03-30 21:51:13');
+INSERT INTO `sys_logininfor` VALUES (245, 'js', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-03-30 21:51:20');
+INSERT INTO `sys_logininfor` VALUES (246, 'js', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-03-30 21:51:35');
+INSERT INTO `sys_logininfor` VALUES (247, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '密码输入错误1次', '2019-03-30 21:51:42');
+INSERT INTO `sys_logininfor` VALUES (248, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-03-30 21:51:48');
+INSERT INTO `sys_logininfor` VALUES (249, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-03-30 21:52:26');
+INSERT INTO `sys_logininfor` VALUES (250, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-03-30 21:52:33');
+INSERT INTO `sys_logininfor` VALUES (251, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '密码输入错误1次', '2019-03-31 12:19:41');
+INSERT INTO `sys_logininfor` VALUES (252, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-03-31 12:19:46');
+INSERT INTO `sys_logininfor` VALUES (253, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-02 11:13:09');
+INSERT INTO `sys_logininfor` VALUES (254, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-02 11:13:28');
+INSERT INTO `sys_logininfor` VALUES (255, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-02 11:13:36');
+INSERT INTO `sys_logininfor` VALUES (256, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-02 11:13:44');
+INSERT INTO `sys_logininfor` VALUES (257, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-02 11:13:47');
+INSERT INTO `sys_logininfor` VALUES (258, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-02 11:39:03');
+INSERT INTO `sys_logininfor` VALUES (259, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-04 10:06:15');
+INSERT INTO `sys_logininfor` VALUES (260, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-13 22:17:55');
+INSERT INTO `sys_logininfor` VALUES (261, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-13 22:18:13');
+INSERT INTO `sys_logininfor` VALUES (262, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-13 22:18:18');
+INSERT INTO `sys_logininfor` VALUES (263, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-13 22:18:28');
+INSERT INTO `sys_logininfor` VALUES (264, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-13 22:19:02');
+INSERT INTO `sys_logininfor` VALUES (265, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-13 22:19:20');
+INSERT INTO `sys_logininfor` VALUES (266, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-13 22:19:26');
+INSERT INTO `sys_logininfor` VALUES (267, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-13 22:19:55');
+INSERT INTO `sys_logininfor` VALUES (268, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-13 22:20:05');
+INSERT INTO `sys_logininfor` VALUES (269, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-13 22:20:30');
+INSERT INTO `sys_logininfor` VALUES (270, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-13 22:20:55');
+INSERT INTO `sys_logininfor` VALUES (271, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:01:44');
+INSERT INTO `sys_logininfor` VALUES (272, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-25 19:16:45');
+INSERT INTO `sys_logininfor` VALUES (273, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-25 19:16:50');
+INSERT INTO `sys_logininfor` VALUES (274, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:16:57');
+INSERT INTO `sys_logininfor` VALUES (275, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:19:59');
+INSERT INTO `sys_logininfor` VALUES (276, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-25 19:20:28');
+INSERT INTO `sys_logininfor` VALUES (277, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:20:36');
+INSERT INTO `sys_logininfor` VALUES (278, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:21:51');
+INSERT INTO `sys_logininfor` VALUES (279, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-25 19:22:38');
+INSERT INTO `sys_logininfor` VALUES (280, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:22:47');
+INSERT INTO `sys_logininfor` VALUES (281, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:27:14');
+INSERT INTO `sys_logininfor` VALUES (282, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:27:34');
+INSERT INTO `sys_logininfor` VALUES (283, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:37:06');
+INSERT INTO `sys_logininfor` VALUES (284, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-25 19:40:17');
+INSERT INTO `sys_logininfor` VALUES (285, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:40:20');
+INSERT INTO `sys_logininfor` VALUES (286, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:44:47');
+INSERT INTO `sys_logininfor` VALUES (287, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:47:32');
+INSERT INTO `sys_logininfor` VALUES (288, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-25 19:48:41');
+INSERT INTO `sys_logininfor` VALUES (289, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:48:46');
+INSERT INTO `sys_logininfor` VALUES (290, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:50:52');
+INSERT INTO `sys_logininfor` VALUES (291, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-25 19:51:25');
+INSERT INTO `sys_logininfor` VALUES (292, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:51:30');
+INSERT INTO `sys_logininfor` VALUES (293, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:53:14');
+INSERT INTO `sys_logininfor` VALUES (294, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 19:56:08');
+INSERT INTO `sys_logininfor` VALUES (295, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:00:12');
+INSERT INTO `sys_logininfor` VALUES (296, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:01:03');
+INSERT INTO `sys_logininfor` VALUES (297, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:10:04');
+INSERT INTO `sys_logininfor` VALUES (298, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-25 20:12:05');
+INSERT INTO `sys_logininfor` VALUES (299, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:12:08');
+INSERT INTO `sys_logininfor` VALUES (300, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:18:28');
+INSERT INTO `sys_logininfor` VALUES (301, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:22:35');
+INSERT INTO `sys_logininfor` VALUES (302, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-25 20:32:03');
+INSERT INTO `sys_logininfor` VALUES (303, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:32:06');
+INSERT INTO `sys_logininfor` VALUES (304, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:35:39');
+INSERT INTO `sys_logininfor` VALUES (305, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:37:04');
+INSERT INTO `sys_logininfor` VALUES (306, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:38:30');
+INSERT INTO `sys_logininfor` VALUES (307, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-25 20:39:56');
+INSERT INTO `sys_logininfor` VALUES (308, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:39:59');
+INSERT INTO `sys_logininfor` VALUES (309, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:41:13');
+INSERT INTO `sys_logininfor` VALUES (310, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:44:04');
+INSERT INTO `sys_logininfor` VALUES (311, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:45:01');
+INSERT INTO `sys_logininfor` VALUES (312, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:46:48');
+INSERT INTO `sys_logininfor` VALUES (313, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:47:03');
+INSERT INTO `sys_logininfor` VALUES (314, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:50:40');
+INSERT INTO `sys_logininfor` VALUES (315, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:51:53');
+INSERT INTO `sys_logininfor` VALUES (316, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:54:33');
+INSERT INTO `sys_logininfor` VALUES (317, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:56:10');
+INSERT INTO `sys_logininfor` VALUES (318, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '密码输入错误1次', '2019-04-25 20:57:34');
+INSERT INTO `sys_logininfor` VALUES (319, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 20:57:41');
+INSERT INTO `sys_logininfor` VALUES (320, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 21:00:55');
+INSERT INTO `sys_logininfor` VALUES (321, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-25 21:02:45');
+INSERT INTO `sys_logininfor` VALUES (322, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 21:02:53');
+INSERT INTO `sys_logininfor` VALUES (323, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 21:06:35');
+INSERT INTO `sys_logininfor` VALUES (324, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-25 21:08:28');
+INSERT INTO `sys_logininfor` VALUES (325, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-26 09:46:50');
+INSERT INTO `sys_logininfor` VALUES (326, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 09:46:54');
+INSERT INTO `sys_logininfor` VALUES (327, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '密码输入错误1次', '2019-04-26 09:48:42');
+INSERT INTO `sys_logininfor` VALUES (328, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '密码输入错误2次', '2019-04-26 09:48:47');
+INSERT INTO `sys_logininfor` VALUES (329, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 09:48:56');
+INSERT INTO `sys_logininfor` VALUES (330, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 10:09:09');
+INSERT INTO `sys_logininfor` VALUES (331, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 10:09:58');
+INSERT INTO `sys_logininfor` VALUES (332, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 10:12:21');
+INSERT INTO `sys_logininfor` VALUES (333, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 10:14:48');
+INSERT INTO `sys_logininfor` VALUES (334, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 12:50:36');
+INSERT INTO `sys_logininfor` VALUES (335, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 12:52:23');
+INSERT INTO `sys_logininfor` VALUES (336, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:01:40');
+INSERT INTO `sys_logininfor` VALUES (337, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:03:52');
+INSERT INTO `sys_logininfor` VALUES (338, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:28:23');
+INSERT INTO `sys_logininfor` VALUES (339, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-26 13:29:04');
+INSERT INTO `sys_logininfor` VALUES (340, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:29:07');
+INSERT INTO `sys_logininfor` VALUES (341, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-26 13:33:21');
+INSERT INTO `sys_logininfor` VALUES (342, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:33:25');
+INSERT INTO `sys_logininfor` VALUES (343, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-26 13:34:50');
+INSERT INTO `sys_logininfor` VALUES (344, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:34:53');
+INSERT INTO `sys_logininfor` VALUES (345, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:35:44');
+INSERT INTO `sys_logininfor` VALUES (346, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-26 13:37:00');
+INSERT INTO `sys_logininfor` VALUES (347, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:37:04');
+INSERT INTO `sys_logininfor` VALUES (348, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:37:30');
+INSERT INTO `sys_logininfor` VALUES (349, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:40:41');
+INSERT INTO `sys_logininfor` VALUES (350, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:45:49');
+INSERT INTO `sys_logininfor` VALUES (351, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-26 13:52:36');
+INSERT INTO `sys_logininfor` VALUES (352, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:52:40');
+INSERT INTO `sys_logininfor` VALUES (353, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-26 13:56:54');
+INSERT INTO `sys_logininfor` VALUES (354, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 13:56:57');
+INSERT INTO `sys_logininfor` VALUES (355, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 14:52:55');
+INSERT INTO `sys_logininfor` VALUES (356, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 15:16:57');
+INSERT INTO `sys_logininfor` VALUES (357, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 15:20:50');
+INSERT INTO `sys_logininfor` VALUES (358, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '密码输入错误1次', '2019-04-26 15:22:34');
+INSERT INTO `sys_logininfor` VALUES (359, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-26 15:22:37');
+INSERT INTO `sys_logininfor` VALUES (360, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 15:22:42');
+INSERT INTO `sys_logininfor` VALUES (361, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 15:24:55');
+INSERT INTO `sys_logininfor` VALUES (362, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-26 15:32:10');
+INSERT INTO `sys_logininfor` VALUES (363, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-27 14:51:59');
+INSERT INTO `sys_logininfor` VALUES (364, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 14:52:13');
+INSERT INTO `sys_logininfor` VALUES (365, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 14:53:43');
+INSERT INTO `sys_logininfor` VALUES (366, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-27 15:03:15');
+INSERT INTO `sys_logininfor` VALUES (367, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 15:03:19');
+INSERT INTO `sys_logininfor` VALUES (368, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-27 15:05:43');
+INSERT INTO `sys_logininfor` VALUES (369, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 15:05:47');
+INSERT INTO `sys_logininfor` VALUES (370, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 15:07:58');
+INSERT INTO `sys_logininfor` VALUES (371, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-27 15:11:49');
+INSERT INTO `sys_logininfor` VALUES (372, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 15:11:53');
+INSERT INTO `sys_logininfor` VALUES (373, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 15:14:29');
+INSERT INTO `sys_logininfor` VALUES (374, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 15:17:12');
+INSERT INTO `sys_logininfor` VALUES (375, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-27 15:35:23');
+INSERT INTO `sys_logininfor` VALUES (376, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 15:35:28');
+INSERT INTO `sys_logininfor` VALUES (377, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 15:38:52');
+INSERT INTO `sys_logininfor` VALUES (378, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 15:47:08');
+INSERT INTO `sys_logininfor` VALUES (379, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-27 16:01:00');
+INSERT INTO `sys_logininfor` VALUES (380, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 16:01:05');
+INSERT INTO `sys_logininfor` VALUES (381, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 16:03:02');
+INSERT INTO `sys_logininfor` VALUES (382, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 16:04:16');
+INSERT INTO `sys_logininfor` VALUES (383, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 16:05:57');
+INSERT INTO `sys_logininfor` VALUES (384, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 16:08:03');
+INSERT INTO `sys_logininfor` VALUES (385, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 16:11:02');
+INSERT INTO `sys_logininfor` VALUES (386, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 19:50:07');
+INSERT INTO `sys_logininfor` VALUES (387, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '1', '验证码错误', '2019-04-27 20:50:51');
+INSERT INTO `sys_logininfor` VALUES (388, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 20:50:56');
+INSERT INTO `sys_logininfor` VALUES (389, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-27 22:02:00');
+INSERT INTO `sys_logininfor` VALUES (390, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-28 10:44:51');
+INSERT INTO `sys_logininfor` VALUES (391, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-28 15:28:04');
+INSERT INTO `sys_logininfor` VALUES (392, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-28 15:35:01');
+INSERT INTO `sys_logininfor` VALUES (393, 'js', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-28 15:35:11');
+INSERT INTO `sys_logininfor` VALUES (394, 'js', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-28 15:55:21');
+INSERT INTO `sys_logininfor` VALUES (395, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-28 15:55:29');
+INSERT INTO `sys_logininfor` VALUES (396, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-28 16:01:18');
+INSERT INTO `sys_logininfor` VALUES (397, 'js', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-28 16:01:27');
+INSERT INTO `sys_logininfor` VALUES (398, 'js', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-28 16:08:29');
+INSERT INTO `sys_logininfor` VALUES (399, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-28 16:08:38');
+INSERT INTO `sys_logininfor` VALUES (400, 'admin', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '退出成功', '2019-04-28 16:16:51');
+INSERT INTO `sys_logininfor` VALUES (401, 'stu', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', '0', '登录成功', '2019-04-28 16:16:59');
 
 -- ----------------------------
 -- Table structure for sys_menu
@@ -631,7 +860,7 @@ CREATE TABLE `sys_menu`  (
   `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '备注',
   PRIMARY KEY (`menu_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2008 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '菜单权限表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 2020 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '菜单权限表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_menu
@@ -718,10 +947,18 @@ INSERT INTO `sys_menu` VALUES (1057, '生成代码', 114, 2, '#', 'F', '0', 'too
 INSERT INTO `sys_menu` VALUES (2001, '考试信息', 0, 5, '#', 'M', '0', '', '#', 'admin', '2019-03-28 13:33:56', 'admin', '2019-03-28 13:41:20', '');
 INSERT INTO `sys_menu` VALUES (2003, '考试列表', 2001, 2, '/system/examList', 'C', '0', 'system:examList:view', '#', 'admin', '2019-03-28 13:35:28', 'admin', '2019-03-29 15:15:23', '');
 INSERT INTO `sys_menu` VALUES (2004, '试题库', 0, 4, '#', 'M', '0', '', '#', 'admin', '2019-03-28 13:39:38', 'admin', '2019-03-28 13:41:11', '');
-INSERT INTO `sys_menu` VALUES (2005, '计算机', 2004, 1, '/system/tbSubject', 'C', '0', 'system:tbSubject:view', 'fa fa-calculator', 'admin', '2019-03-28 13:40:09', 'admin', '2019-03-30 18:28:52', '');
-INSERT INTO `sys_menu` VALUES (2007, '成绩', 2001, 1, '#', 'C', '0', NULL, '#', 'admin', '2019-03-29 14:27:18', '', NULL, '');
-INSERT INTO `sys_menu` VALUES (2008, '题目列表', 2005, 1, '/system/tbSubject/list', 'F', '0', 'system:tbSubject:list', '#', 'admin', '2019-03-30 18:30:50', 'admin', '2019-03-30 18:34:14', '');
+INSERT INTO `sys_menu` VALUES (2005, '计算机', 2004, 1, '/system/tbSubject', 'C', '0', 'system:tbSubject:view', 'fa fa-calculator', 'admin', '2019-03-28 13:40:09', 'admin', '2019-04-11 11:17:40', '');
+INSERT INTO `sys_menu` VALUES (2007, '成绩', 2001, 1, '/system/examRecord', 'C', '0', 'system:examRecord:view', '#', 'admin', '2019-03-29 14:27:18', 'admin', '2019-04-13 16:34:55', '');
+INSERT INTO `sys_menu` VALUES (2008, '题目列表', 2005, 1, '/system/tbSubject/list', 'F', '0', 'system:tbSubject:list', '#', 'admin', '2019-03-30 18:30:50', 'admin', '2019-04-11 13:47:35', '');
 INSERT INTO `sys_menu` VALUES (2009, '计算机', 2003, 1, '/system/examList/list', 'F', '0', 'system:examList:list', '#', 'admin', '2019-03-30 18:32:23', 'admin', '2019-03-30 18:34:26', '');
+INSERT INTO `sys_menu` VALUES (2010, '数学', 2004, 2, '/system/tbSubject/2', 'C', '0', 'system:tbSubject:view2', '#', 'admin', '2019-04-11 13:36:03', 'admin', '2019-04-11 14:05:01', '');
+INSERT INTO `sys_menu` VALUES (2011, '题目列表', 2010, 1, '/system/tbSubject/list2', 'F', '0', 'system:tbSubject:list2', '#', 'admin', '2019-04-11 13:36:52', 'admin', '2019-04-11 13:47:43', '');
+INSERT INTO `sys_menu` VALUES (2012, '列表', 2007, 1, '/system/examRecord/list', 'F', '0', 'system:examRecord:list', '#', 'admin', '2019-04-13 16:36:28', 'admin', '2019-04-13 16:37:51', '');
+INSERT INTO `sys_menu` VALUES (2015, '考试信息(学生)', 0, 6, '#', 'M', '0', '', 'fa fa-bar-chart-o', 'admin', '2019-04-25 19:08:19', 'admin', '2019-04-25 19:10:35', '');
+INSERT INTO `sys_menu` VALUES (2016, '考试列表', 2015, 1, '/system/examList/student', 'C', '0', 'system:examList:view:student', '#', 'admin', '2019-04-25 19:10:59', 'admin', '2019-04-25 19:20:15', '');
+INSERT INTO `sys_menu` VALUES (2017, '计算机', 2016, 1, '/system/examList/list/student', 'F', '0', 'system:examList:list:student', '#', 'admin', '2019-04-25 19:13:50', 'admin', '2019-04-25 19:26:15', '');
+INSERT INTO `sys_menu` VALUES (2019, '在线考试', 2015, 2, '/system/examList/getDetailPaper', 'C', '0', 'system:examList:view:student', 'fa fa-bank', 'admin', '2019-04-26 13:07:51', 'admin', '2019-04-26 13:10:51', '');
+INSERT INTO `sys_menu` VALUES (2020, '考试中', 2019, 1, '/system/examList/getDetailPaper', 'F', '0', 'system:examList:view:student', '#', 'admin', '2019-04-26 13:09:19', 'admin', '2019-04-26 13:09:26', '');
 
 -- ----------------------------
 -- Table structure for sys_notice
@@ -739,7 +976,7 @@ CREATE TABLE `sys_notice`  (
   `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`notice_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '通知公告表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '通知公告表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_notice
@@ -766,7 +1003,7 @@ CREATE TABLE `sys_oper_log`  (
   `error_msg` varchar(2000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '错误消息',
   `oper_time` datetime(0) NULL DEFAULT NULL COMMENT '操作时间',
   PRIMARY KEY (`oper_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 163 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '操作日志记录' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 315 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '操作日志记录' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_oper_log
@@ -853,6 +1090,140 @@ INSERT INTO `sys_oper_log` VALUES (178, '菜单管理', 1, 'com.ruoyi.project.sy
 INSERT INTO `sys_oper_log` VALUES (179, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"100\"],\"roleName\":[\"教师\"],\"roleKey\":[\"teacher\"],\"roleSort\":[\"3\"],\"status\":[\"0\"],\"remark\":[\"老师\"],\"menuIds\":[\"1,100,1000,1001,1002,1003,1004,1005,1006,103,1016,1017,1018,1019,2004,2005,2008,2001,2003,2009\"]}', 0, NULL, '2019-03-30 18:33:06');
 INSERT INTO `sys_oper_log` VALUES (180, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2005\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-03-30 18:34:14');
 INSERT INTO `sys_oper_log` VALUES (181, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2009\"],\"parentId\":[\"2003\"],\"menuType\":[\"F\"],\"menuName\":[\"计算机\"],\"url\":[\"/system/examList/list\"],\"perms\":[\"system:examList:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-03-30 18:34:26');
+INSERT INTO `sys_oper_log` VALUES (182, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"101\"],\"roleName\":[\"学生\"],\"roleKey\":[\"student\"],\"roleSort\":[\"4\"],\"status\":[\"0\"],\"remark\":[\"学生\"],\"menuIds\":[\"2001,2003,2009\"]}', 0, NULL, '2019-03-30 21:52:44');
+INSERT INTO `sys_oper_log` VALUES (183, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2005\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-04 11:19:52');
+INSERT INTO `sys_oper_log` VALUES (184, '代码生成', 8, 'com.ruoyi.project.tool.gen.controller.GenController.batchGenCode()', 1, 'admin', '研发部门', '/tool/gen/batchGenCode', '127.0.0.1', '内网IP', '{\"tables\":[\"sys_course,sys_tb_subject\"]}', 0, NULL, '2019-04-08 13:33:03');
+INSERT INTO `sys_oper_log` VALUES (185, '定时任务', 2, 'com.ruoyi.project.monitor.job.controller.JobController.changeStatus()', 1, 'admin', '研发部门', '/monitor/job/changeStatus', '127.0.0.1', '内网IP', '{\"jobId\":[\"1\"],\"status\":[\"0\"]}', 0, NULL, '2019-04-11 10:53:26');
+INSERT INTO `sys_oper_log` VALUES (186, '定时任务', 2, 'com.ruoyi.project.monitor.job.controller.JobController.changeStatus()', 1, 'admin', '研发部门', '/monitor/job/changeStatus', '127.0.0.1', '内网IP', '{\"jobId\":[\"2\"],\"status\":[\"0\"]}', 0, NULL, '2019-04-11 10:53:29');
+INSERT INTO `sys_oper_log` VALUES (187, '定时任务', 2, 'com.ruoyi.project.monitor.job.controller.JobController.run()', 1, 'admin', '研发部门', '/monitor/job/run', '127.0.0.1', '内网IP', '{\"jobId\":[\"1\"]}', 0, NULL, '2019-04-11 10:53:35');
+INSERT INTO `sys_oper_log` VALUES (188, '定时任务', 2, 'com.ruoyi.project.monitor.job.controller.JobController.run()', 1, 'admin', '研发部门', '/monitor/job/run', '127.0.0.1', '内网IP', '{\"jobId\":[\"2\"]}', 0, NULL, '2019-04-11 10:53:44');
+INSERT INTO `sys_oper_log` VALUES (189, '定时任务', 2, 'com.ruoyi.project.monitor.job.controller.JobController.run()', 1, 'admin', '研发部门', '/monitor/job/run', '127.0.0.1', '内网IP', '{\"jobId\":[\"1\"]}', 0, NULL, '2019-04-11 10:54:29');
+INSERT INTO `sys_oper_log` VALUES (190, '定时任务', 2, 'com.ruoyi.project.monitor.job.controller.JobController.run()', 1, 'admin', '研发部门', '/monitor/job/run', '127.0.0.1', '内网IP', '{\"jobId\":[\"2\"]}', 0, NULL, '2019-04-11 10:54:36');
+INSERT INTO `sys_oper_log` VALUES (191, '定时任务', 2, 'com.ruoyi.project.monitor.job.controller.JobController.changeStatus()', 1, 'admin', '研发部门', '/monitor/job/changeStatus', '127.0.0.1', '内网IP', '{\"jobId\":[\"2\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 10:58:36');
+INSERT INTO `sys_oper_log` VALUES (192, '定时任务', 2, 'com.ruoyi.project.monitor.job.controller.JobController.changeStatus()', 1, 'admin', '研发部门', '/monitor/job/changeStatus', '127.0.0.1', '内网IP', '{\"jobId\":[\"1\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 10:58:38');
+INSERT INTO `sys_oper_log` VALUES (193, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2005\"],\"parentId\":[\"2004\"],\"menuType\":[\"C\"],\"menuName\":[\"计算机\"],\"url\":[\"/system/tbSubject/1\"],\"perms\":[\"system:tbSubject:view\"],\"orderNum\":[\"1\"],\"icon\":[\"fa fa-calculator\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 11:14:50');
+INSERT INTO `sys_oper_log` VALUES (194, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2005\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 11:15:28');
+INSERT INTO `sys_oper_log` VALUES (195, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2005\"],\"parentId\":[\"2004\"],\"menuType\":[\"C\"],\"menuName\":[\"计算机\"],\"url\":[\"/system/tbSubject\"],\"perms\":[\"system:tbSubject:view\"],\"orderNum\":[\"1\"],\"icon\":[\"fa fa-calculator\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 11:17:40');
+INSERT INTO `sys_oper_log` VALUES (196, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2005\"],\"menuType\":[\"C\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list/1\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:31:03');
+INSERT INTO `sys_oper_log` VALUES (197, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2004\"],\"menuType\":[\"C\"],\"menuName\":[\"数学\"],\"url\":[\"/system/tbSubject\"],\"perms\":[\"system:tbSubject:view\"],\"orderNum\":[\"2\"],\"icon\":[\"\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:36:03');
+INSERT INTO `sys_oper_log` VALUES (198, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2010\"],\"parentId\":[\"2004\"],\"menuType\":[\"C\"],\"menuName\":[\"数学\"],\"url\":[\"/system/tbSubject\"],\"perms\":[\"system:tbSubject:view\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:36:20');
+INSERT INTO `sys_oper_log` VALUES (199, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2010\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"\"],\"perms\":[\"/system/tbSubject\"],\"orderNum\":[\"1\"],\"icon\":[\"\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:36:52');
+INSERT INTO `sys_oper_log` VALUES (200, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2011\"],\"parentId\":[\"2010\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"#\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:37:57');
+INSERT INTO `sys_oper_log` VALUES (201, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2005\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list/1\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:39:21');
+INSERT INTO `sys_oper_log` VALUES (202, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2011\"],\"parentId\":[\"2010\"],\"menuType\":[\"C\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list/2\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:39:52');
+INSERT INTO `sys_oper_log` VALUES (203, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2011\"],\"parentId\":[\"2010\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list/2\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:40:00');
+INSERT INTO `sys_oper_log` VALUES (204, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2005\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list/1\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:41:29');
+INSERT INTO `sys_oper_log` VALUES (205, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2005\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list/1\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:41:49');
+INSERT INTO `sys_oper_log` VALUES (206, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2011\"],\"parentId\":[\"2010\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list/2\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:42:00');
+INSERT INTO `sys_oper_log` VALUES (207, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2005\"],\"menuType\":[\"C\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:46:15');
+INSERT INTO `sys_oper_log` VALUES (208, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2011\"],\"parentId\":[\"2010\"],\"menuType\":[\"C\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list2\"],\"perms\":[\"system:tbSubject:list2\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:46:34');
+INSERT INTO `sys_oper_log` VALUES (209, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2008\"],\"parentId\":[\"2005\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list\"],\"perms\":[\"system:tbSubject:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:47:35');
+INSERT INTO `sys_oper_log` VALUES (210, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2011\"],\"parentId\":[\"2010\"],\"menuType\":[\"F\"],\"menuName\":[\"题目列表\"],\"url\":[\"/system/tbSubject/list2\"],\"perms\":[\"system:tbSubject:list2\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 13:47:43');
+INSERT INTO `sys_oper_log` VALUES (211, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2010\"],\"parentId\":[\"2004\"],\"menuType\":[\"C\"],\"menuName\":[\"数学\"],\"url\":[\"/system/tbSubject/2\"],\"perms\":[\"system:tbSubject:view2\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-11 14:05:01');
+INSERT INTO `sys_oper_log` VALUES (212, '试题库', 1, 'com.ruoyi.project.system.tbSubject.controller.TbSubjectController.addSave()', 1, 'admin', '研发部门', '/system/tbSubject/add', '127.0.0.1', '内网IP', '{\"subjectTitle\":[\"1+1=?\"],\"subjectOptionA\":[\"2\"],\"subjectOptionB\":[\"10\"],\"subjectOptionC\":[\"5\"],\"subjectOptionD\":[\"6\"],\"subjectAnswer\":[\"A\"],\"subjectParse\":[\"2，10在二进制下是正确的\"],\"courseId\":[\"2\"]}', 1, '\r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`quartz`.`sys_tb_subject`, CONSTRAINT `courseId` FOREIGN KEY (`courseId`) REFERENCES `sys_course` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)\r\n### The error may involve com.ruoyi.project.system.tbSubject.mapper.TbSubjectMapper.insertTbSubject-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into sys_tb_subject    ( subjectTitle,    subjectOptionA,    subjectOptionB,    subjectOptionC,    subjectOptionD,    subjectAnswer,    subjectParse,    courseId )           values ( ?,    ?,    ?,    ?,    ?,    ?,    ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`quartz`.`sys_tb_subject`, CONSTRAINT `courseId` FOREIGN KEY (`courseId`) REFERENCES `sys_course` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)\n; Cannot add or update a child row: a foreign key constraint fails (`quartz`.`sys_tb_subject`, CONSTRAINT `courseId` FOREIGN KEY (`courseId`) REFERENCES `sys_course` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT); nested exception is java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`quartz`.`sys_tb_subject`, CONSTRAINT `courseId` FOREIGN KEY (`courseId`) REFERENCES `sys_course` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT)', '2019-04-11 14:08:25');
+INSERT INTO `sys_oper_log` VALUES (213, '试题库', 1, 'com.ruoyi.project.system.tbSubject.controller.TbSubjectController.addSave()', 1, 'admin', '研发部门', '/system/tbSubject/add', '127.0.0.1', '内网IP', '{\"subjectTitle\":[\"1+1=?\"],\"subjectOptionA\":[\"2\"],\"subjectOptionB\":[\"10\"],\"subjectOptionC\":[\"5\"],\"subjectOptionD\":[\"6\"],\"subjectAnswer\":[\"A\"],\"subjectParse\":[\"2，10在二进制下是正确的\"],\"courseId\":[\"2\"]}', 0, NULL, '2019-04-11 14:10:16');
+INSERT INTO `sys_oper_log` VALUES (214, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"1\"]}', 0, NULL, '2019-04-11 14:28:45');
+INSERT INTO `sys_oper_log` VALUES (215, '字典类型', 1, 'com.ruoyi.project.system.dict.controller.DictTypeController.addSave()', 1, 'admin', '研发部门', '/system/dict/add', '127.0.0.1', '内网IP', '{\"dictName\":[\"课程名称\"],\"dictType\":[\"sys_course_name\"],\"status\":[\"0\"],\"remark\":[\"用户 标识 课程id\"]}', 0, NULL, '2019-04-11 14:38:30');
+INSERT INTO `sys_oper_log` VALUES (216, '字典数据', 1, 'com.ruoyi.project.system.dict.controller.DictDataController.addSave()', 1, 'admin', '研发部门', '/system/dict/data/add', '127.0.0.1', '内网IP', '{\"dictLabel\":[\"计算机\"],\"dictValue\":[\"1\"],\"dictType\":[\"sys_course_name\"],\"cssClass\":[\"\"],\"dictSort\":[\"1\"],\"listClass\":[\"default\"],\"isDefault\":[\"Y\"],\"status\":[\"0\"],\"remark\":[\"\"]}', 0, NULL, '2019-04-11 14:39:59');
+INSERT INTO `sys_oper_log` VALUES (217, '字典数据', 1, 'com.ruoyi.project.system.dict.controller.DictDataController.addSave()', 1, 'admin', '研发部门', '/system/dict/data/add', '127.0.0.1', '内网IP', '{\"dictLabel\":[\"数学\"],\"dictValue\":[\"2\"],\"dictType\":[\"sys_course_name\"],\"cssClass\":[\"\"],\"dictSort\":[\"2\"],\"listClass\":[\"default\"],\"isDefault\":[\"Y\"],\"status\":[\"0\"],\"remark\":[\"\"]}', 0, NULL, '2019-04-11 14:40:21');
+INSERT INTO `sys_oper_log` VALUES (218, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"sex\":[\"1\"],\"startTime\":[\"2019年5月12日 08:00:00\"],\"endTIme\":[\"2019年5月13日 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 14:42:49');
+INSERT INTO `sys_oper_log` VALUES (219, '字典数据', 2, 'com.ruoyi.project.system.dict.controller.DictDataController.editSave()', 1, 'admin', '研发部门', '/system/dict/data/edit', '127.0.0.1', '内网IP', '{\"dictCode\":[\"101\"],\"dictLabel\":[\"数学\"],\"dictValue\":[\"数学\"],\"dictType\":[\"sys_course_name\"],\"cssClass\":[\"\"],\"dictSort\":[\"2\"],\"listClass\":[\"default\"],\"isDefault\":[\"Y\"],\"status\":[\"0\"],\"remark\":[\"\"]}', 0, NULL, '2019-04-11 14:44:24');
+INSERT INTO `sys_oper_log` VALUES (220, '字典数据', 2, 'com.ruoyi.project.system.dict.controller.DictDataController.editSave()', 1, 'admin', '研发部门', '/system/dict/data/edit', '127.0.0.1', '内网IP', '{\"dictCode\":[\"100\"],\"dictLabel\":[\"计算机\"],\"dictValue\":[\"计算机\"],\"dictType\":[\"sys_course_name\"],\"cssClass\":[\"\"],\"dictSort\":[\"1\"],\"listClass\":[\"default\"],\"isDefault\":[\"Y\"],\"status\":[\"0\"],\"remark\":[\"\"]}', 0, NULL, '2019-04-11 14:44:33');
+INSERT INTO `sys_oper_log` VALUES (221, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"2\"]}', 0, NULL, '2019-04-11 14:44:48');
+INSERT INTO `sys_oper_log` VALUES (222, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"sex\":[\"计算机\"],\"startTime\":[\"2019年5月12日 08:00:00\"],\"endTIme\":[\"2019年5月12日 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 14:44:57');
+INSERT INTO `sys_oper_log` VALUES (223, '考试列', 2, 'com.ruoyi.project.system.examList.controller.ExamListController.editSave()', 1, 'admin', '研发部门', '/system/examList/edit', '127.0.0.1', '内网IP', '{\"id\":[\"3\"],\"name\":[\"js\"],\"startTime\":[\"11\"],\"endTIme\":[\"22\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 14:45:44');
+INSERT INTO `sys_oper_log` VALUES (224, '考试列', 2, 'com.ruoyi.project.system.examList.controller.ExamListController.editSave()', 1, 'admin', '研发部门', '/system/examList/edit', '127.0.0.1', '内网IP', '{\"id\":[\"3\"],\"name\":[\"js\"],\"startTime\":[\"2019/05/06 08:00:00\"],\"endTIme\":[\"2019/05/06 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 14:46:05');
+INSERT INTO `sys_oper_log` VALUES (225, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"sex\":[\"计算机\"],\"startTime\":[\"\"],\"endTIme\":[\"\"],\"status\":[\"\"]}', 1, '\r\n### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1\r\n### The error may involve com.ruoyi.project.system.examList.mapper.ExamListMapper.insertExamList-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into sys_exam_list\r\n### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1\n; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'\' at line 1', '2019-04-11 14:46:13');
+INSERT INTO `sys_oper_log` VALUES (226, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"3\"]}', 0, NULL, '2019-04-11 14:46:21');
+INSERT INTO `sys_oper_log` VALUES (227, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"sex\":[\"计算机\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 14:46:48');
+INSERT INTO `sys_oper_log` VALUES (228, '字典数据', 2, 'com.ruoyi.project.system.dict.controller.DictDataController.editSave()', 1, 'admin', '研发部门', '/system/dict/data/edit', '127.0.0.1', '内网IP', '{\"dictCode\":[\"101\"],\"dictLabel\":[\"数学\"],\"dictValue\":[\"1\"],\"dictType\":[\"sys_course_name\"],\"cssClass\":[\"\"],\"dictSort\":[\"2\"],\"listClass\":[\"default\"],\"isDefault\":[\"Y\"],\"status\":[\"0\"],\"remark\":[\"\"]}', 0, NULL, '2019-04-11 14:48:40');
+INSERT INTO `sys_oper_log` VALUES (229, '字典数据', 2, 'com.ruoyi.project.system.dict.controller.DictDataController.editSave()', 1, 'admin', '研发部门', '/system/dict/data/edit', '127.0.0.1', '内网IP', '{\"dictCode\":[\"101\"],\"dictLabel\":[\"数学\"],\"dictValue\":[\"1\"],\"dictType\":[\"sys_course_name\"],\"cssClass\":[\"\"],\"dictSort\":[\"2\"],\"listClass\":[\"default\"],\"isDefault\":[\"Y\"],\"status\":[\"0\"],\"remark\":[\"\"]}', 0, NULL, '2019-04-11 14:48:47');
+INSERT INTO `sys_oper_log` VALUES (230, '字典数据', 2, 'com.ruoyi.project.system.dict.controller.DictDataController.editSave()', 1, 'admin', '研发部门', '/system/dict/data/edit', '127.0.0.1', '内网IP', '{\"dictCode\":[\"100\"],\"dictLabel\":[\"计算机\"],\"dictValue\":[\"1\"],\"dictType\":[\"sys_course_name\"],\"cssClass\":[\"\"],\"dictSort\":[\"1\"],\"listClass\":[\"default\"],\"isDefault\":[\"Y\"],\"status\":[\"0\"],\"remark\":[\"\"]}', 0, NULL, '2019-04-11 14:49:10');
+INSERT INTO `sys_oper_log` VALUES (231, '字典数据', 2, 'com.ruoyi.project.system.dict.controller.DictDataController.editSave()', 1, 'admin', '研发部门', '/system/dict/data/edit', '127.0.0.1', '内网IP', '{\"dictCode\":[\"101\"],\"dictLabel\":[\"数学\"],\"dictValue\":[\"2\"],\"dictType\":[\"sys_course_name\"],\"cssClass\":[\"\"],\"dictSort\":[\"2\"],\"listClass\":[\"default\"],\"isDefault\":[\"Y\"],\"status\":[\"0\"],\"remark\":[\"\"]}', 0, NULL, '2019-04-11 14:49:16');
+INSERT INTO `sys_oper_log` VALUES (232, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"sex\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"0\"]}', 0, NULL, '2019-04-11 14:53:56');
+INSERT INTO `sys_oper_log` VALUES (233, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"0\"]}', 0, NULL, '2019-04-11 14:54:43');
+INSERT INTO `sys_oper_log` VALUES (234, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 15:00:38');
+INSERT INTO `sys_oper_log` VALUES (235, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"4,5,6,7\"]}', 0, NULL, '2019-04-11 15:05:31');
+INSERT INTO `sys_oper_log` VALUES (236, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 1, '', '2019-04-11 15:05:41');
+INSERT INTO `sys_oper_log` VALUES (237, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 1, '', '2019-04-11 15:07:13');
+INSERT INTO `sys_oper_log` VALUES (238, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 1, '', '2019-04-11 15:08:55');
+INSERT INTO `sys_oper_log` VALUES (239, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 1, '', '2019-04-11 15:13:35');
+INSERT INTO `sys_oper_log` VALUES (240, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 1, '', '2019-04-11 15:15:24');
+INSERT INTO `sys_oper_log` VALUES (241, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 15:16:32');
+INSERT INTO `sys_oper_log` VALUES (242, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 15:17:16');
+INSERT INTO `sys_oper_log` VALUES (243, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"8,9\"]}', 0, NULL, '2019-04-11 15:17:24');
+INSERT INTO `sys_oper_log` VALUES (244, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"2\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 15:17:31');
+INSERT INTO `sys_oper_log` VALUES (245, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"10\"]}', 0, NULL, '2019-04-11 15:17:37');
+INSERT INTO `sys_oper_log` VALUES (246, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 15:24:16');
+INSERT INTO `sys_oper_log` VALUES (247, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"11\"]}', 0, NULL, '2019-04-11 16:01:21');
+INSERT INTO `sys_oper_log` VALUES (248, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 16:01:27');
+INSERT INTO `sys_oper_log` VALUES (249, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"12\"]}', 0, NULL, '2019-04-11 16:04:08');
+INSERT INTO `sys_oper_log` VALUES (250, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 1, '\r\n### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column \'questions\' at row 1\r\n### The error may involve com.ruoyi.project.system.examList.mapper.ExamListMapper.insertExamList-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into sys_exam_list    ( name,    startTime,    endTIme,    status,             courseId,             questions )           values ( ?,    ?,    ?,    ?,             ?,             ? )\r\n### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column \'questions\' at row 1\n; Data truncation: Data too long for column \'questions\' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column \'questions\' at row 1', '2019-04-11 16:04:14');
+INSERT INTO `sys_oper_log` VALUES (251, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 1, '\r\n### Error updating database.  Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column \'questions\' at row 1\r\n### The error may involve com.ruoyi.project.system.examList.mapper.ExamListMapper.insertExamList-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into sys_exam_list    ( name,    startTime,    endTIme,    status,             courseId,             questions )           values ( ?,    ?,    ?,    ?,             ?,             ? )\r\n### Cause: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column \'questions\' at row 1\n; Data truncation: Data too long for column \'questions\' at row 1; nested exception is com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column \'questions\' at row 1', '2019-04-11 16:06:42');
+INSERT INTO `sys_oper_log` VALUES (252, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/5/12 08:00:00\"],\"endTIme\":[\"2019/5/12 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-11 16:07:01');
+INSERT INTO `sys_oper_log` VALUES (253, '代码生成', 8, 'com.ruoyi.project.tool.gen.controller.GenController.genCode()', 1, 'admin', '研发部门', '/tool/gen/genCode/sys_exam_record', '127.0.0.1', '内网IP', '{}', 0, NULL, '2019-04-13 16:27:24');
+INSERT INTO `sys_oper_log` VALUES (254, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2007\"],\"parentId\":[\"2001\"],\"menuType\":[\"C\"],\"menuName\":[\"成绩\"],\"url\":[\"/system/examRecord\"],\"perms\":[\"system:examRecord:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-13 16:34:39');
+INSERT INTO `sys_oper_log` VALUES (255, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2007\"],\"parentId\":[\"2001\"],\"menuType\":[\"C\"],\"menuName\":[\"成绩\"],\"url\":[\"/system/examRecord\"],\"perms\":[\"system:examRecord:view\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-13 16:34:55');
+INSERT INTO `sys_oper_log` VALUES (256, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2007\"],\"menuType\":[\"F\"],\"menuName\":[\"列表\"],\"url\":[\"\"],\"perms\":[\"system:examRecord:list\"],\"orderNum\":[\"1\"],\"icon\":[\"\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-13 16:36:28');
+INSERT INTO `sys_oper_log` VALUES (257, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2012\"],\"parentId\":[\"2007\"],\"menuType\":[\"C\"],\"menuName\":[\"列表\"],\"url\":[\"/system/examRecord/list\"],\"perms\":[\"system:examRecord:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-13 16:37:37');
+INSERT INTO `sys_oper_log` VALUES (258, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2012\"],\"parentId\":[\"2007\"],\"menuType\":[\"F\"],\"menuName\":[\"列表\"],\"url\":[\"/system/examRecord/list\"],\"perms\":[\"system:examRecord:list\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-13 16:37:51');
+INSERT INTO `sys_oper_log` VALUES (259, '考试记录', 1, 'com.ruoyi.project.system.examRecord.controller.ExamRecordController.addSave()', 1, 'admin', '研发部门', '/system/examRecord/add', '127.0.0.1', '内网IP', '{\"userId\":[\"111222\"],\"examId\":[\"123\"],\"score\":[\"60\"],\"record\":[\"AAAAAA\"]}', 1, '\r\n### Error updating database.  Cause: java.sql.SQLException: Field \'id\' doesn\'t have a default value\r\n### The error may involve com.ruoyi.project.system.examRecord.mapper.ExamRecordMapper.insertExamRecord-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into sys_exam_record    ( user_id,    exam_id,    score,    record )           values ( ?,    ?,    ?,    ? )\r\n### Cause: java.sql.SQLException: Field \'id\' doesn\'t have a default value\n; Field \'id\' doesn\'t have a default value; nested exception is java.sql.SQLException: Field \'id\' doesn\'t have a default value', '2019-04-13 16:40:03');
+INSERT INTO `sys_oper_log` VALUES (260, '考试记录', 1, 'com.ruoyi.project.system.examRecord.controller.ExamRecordController.addSave()', 1, 'admin', '研发部门', '/system/examRecord/add', '127.0.0.1', '内网IP', '{\"userId\":[\"111\"],\"examId\":[\"1111\"],\"score\":[\"1000\"],\"record\":[\"aaaaa\"]}', 0, NULL, '2019-04-13 16:40:49');
+INSERT INTO `sys_oper_log` VALUES (261, '考试记录', 1, 'com.ruoyi.project.system.examRecord.controller.ExamRecordController.addSave()', 1, 'admin', '研发部门', '/system/examRecord/add', '127.0.0.1', '内网IP', '{\"userId\":[\"1\"],\"examId\":[\"13\"],\"score\":[\"100\"],\"record\":[\"aaaaa\"]}', 0, NULL, '2019-04-13 20:29:57');
+INSERT INTO `sys_oper_log` VALUES (262, '考试记录', 1, 'com.ruoyi.project.system.examRecord.controller.ExamRecordController.addSave()', 1, 'admin', '研发部门', '/system/examRecord/add', '127.0.0.1', '内网IP', '{\"userId\":[\"1\"],\"examId\":[\"13\"],\"score\":[\"\"],\"record\":[\"\"]}', 1, '\r\n### Error updating database.  Cause: java.sql.SQLException: Field \'record\' doesn\'t have a default value\r\n### The error may involve com.ruoyi.project.system.examRecord.mapper.ExamRecordMapper.insertExamRecord-Inline\r\n### The error occurred while setting parameters\r\n### SQL: insert into sys_exam_record    ( user_id,    exam_id )           values ( ?,    ? )\r\n### Cause: java.sql.SQLException: Field \'record\' doesn\'t have a default value\n; Field \'record\' doesn\'t have a default value; nested exception is java.sql.SQLException: Field \'record\' doesn\'t have a default value', '2019-04-13 20:34:02');
+INSERT INTO `sys_oper_log` VALUES (263, '考试记录', 1, 'com.ruoyi.project.system.examRecord.controller.ExamRecordController.addSave()', 1, 'admin', '研发部门', '/system/examRecord/add', '127.0.0.1', '内网IP', '{\"userId\":[\"1\"],\"examId\":[\"13\"],\"score\":[\"\"],\"record\":[\"\"]}', 0, NULL, '2019-04-13 20:34:53');
+INSERT INTO `sys_oper_log` VALUES (264, '考试记录', 1, 'com.ruoyi.project.system.examRecord.controller.ExamRecordController.addSave()', 1, 'admin', '研发部门', '/system/examRecord/add', '127.0.0.1', '内网IP', '{\"userId\":[\"1\"],\"examId\":[\"13\"],\"score\":[\"\"],\"record\":[\"\"]}', 0, NULL, '2019-04-13 20:45:36');
+INSERT INTO `sys_oper_log` VALUES (265, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"101\"],\"roleName\":[\"学生\"],\"roleKey\":[\"student\"],\"roleSort\":[\"4\"],\"status\":[\"0\"],\"remark\":[\"学生\"],\"menuIds\":[\"2001,2007,2012,2003,2009\"]}', 0, NULL, '2019-04-13 22:18:57');
+INSERT INTO `sys_oper_log` VALUES (266, '考试记录', 1, 'com.ruoyi.project.system.examRecord.controller.ExamRecordController.addSave()', 1, 'admin', '研发部门', '/system/examRecord/add', '127.0.0.1', '内网IP', '{\"userId\":[\"100\"],\"examId\":[\"13\"],\"score\":[\"100\"],\"record\":[\"aaaaa\"]}', 0, NULL, '2019-04-13 22:20:23');
+INSERT INTO `sys_oper_log` VALUES (267, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2009\"],\"menuType\":[\"F\"],\"menuName\":[\"计算机(学生使用)\"],\"url\":[\"\"],\"perms\":[\"\"],\"orderNum\":[\"2\"],\"icon\":[\"\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:02:37');
+INSERT INTO `sys_oper_log` VALUES (268, '菜单管理', 3, 'com.ruoyi.project.system.menu.controller.MenuController.remove()', 1, 'admin', '研发部门', '/system/menu/remove/2013', '127.0.0.1', '内网IP', '{}', 0, NULL, '2019-04-25 19:03:10');
+INSERT INTO `sys_oper_log` VALUES (269, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2003\"],\"menuType\":[\"F\"],\"menuName\":[\"计算机(学生使用)\"],\"url\":[\"\"],\"perms\":[\"\"],\"orderNum\":[\"2\"],\"icon\":[\"\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:03:36');
+INSERT INTO `sys_oper_log` VALUES (270, '菜单管理', 3, 'com.ruoyi.project.system.menu.controller.MenuController.remove()', 1, 'admin', '研发部门', '/system/menu/remove/2014', '127.0.0.1', '内网IP', '{}', 0, NULL, '2019-04-25 19:07:13');
+INSERT INTO `sys_oper_log` VALUES (271, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"0\"],\"menuType\":[\"M\"],\"menuName\":[\"考试信息(学生)\"],\"url\":[\"\"],\"perms\":[\"\"],\"orderNum\":[\"6\"],\"icon\":[\"fa fa-bar-chart-o\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:08:19');
+INSERT INTO `sys_oper_log` VALUES (272, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2015\"],\"parentId\":[\"0\"],\"menuType\":[\"C\"],\"menuName\":[\"考试信息(学生)\"],\"url\":[\"/system/examList\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"6\"],\"icon\":[\"fa fa-bar-chart-o\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:09:23');
+INSERT INTO `sys_oper_log` VALUES (273, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2015\"],\"parentId\":[\"0\"],\"menuType\":[\"M\"],\"menuName\":[\"考试信息(学生)\"],\"url\":[\"/system/examList\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"6\"],\"icon\":[\"fa fa-bar-chart-o\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:10:02');
+INSERT INTO `sys_oper_log` VALUES (274, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2015\"],\"parentId\":[\"0\"],\"menuType\":[\"M\"],\"menuName\":[\"考试信息(学生)\"],\"url\":[\"\"],\"perms\":[\"\"],\"orderNum\":[\"6\"],\"icon\":[\"fa fa-bar-chart-o\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:10:14');
+INSERT INTO `sys_oper_log` VALUES (275, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2015\"],\"parentId\":[\"0\"],\"menuType\":[\"C\"],\"menuName\":[\"考试信息(学生)\"],\"url\":[\"\"],\"perms\":[\"\"],\"orderNum\":[\"6\"],\"icon\":[\"fa fa-bar-chart-o\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:10:22');
+INSERT INTO `sys_oper_log` VALUES (276, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2015\"],\"parentId\":[\"0\"],\"menuType\":[\"M\"],\"menuName\":[\"考试信息(学生)\"],\"url\":[\"#\"],\"perms\":[\"\"],\"orderNum\":[\"6\"],\"icon\":[\"fa fa-bar-chart-o\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:10:35');
+INSERT INTO `sys_oper_log` VALUES (277, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2015\"],\"menuType\":[\"F\"],\"menuName\":[\"计算机\"],\"url\":[\"\"],\"perms\":[\"/system/examList\"],\"orderNum\":[\"1\"],\"icon\":[\"\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:10:59');
+INSERT INTO `sys_oper_log` VALUES (278, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2016\"],\"parentId\":[\"2015\"],\"menuType\":[\"C\"],\"menuName\":[\"计算机\"],\"url\":[\"#\"],\"perms\":[\"/system/examList\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:11:17');
+INSERT INTO `sys_oper_log` VALUES (279, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2016\"],\"parentId\":[\"2015\"],\"menuType\":[\"C\"],\"menuName\":[\"计算机\"],\"url\":[\"/system/examList\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:12:02');
+INSERT INTO `sys_oper_log` VALUES (280, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2016\"],\"parentId\":[\"2015\"],\"menuType\":[\"C\"],\"menuName\":[\"考试列表\"],\"url\":[\"/system/examList\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:12:29');
+INSERT INTO `sys_oper_log` VALUES (281, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2016\"],\"menuType\":[\"C\"],\"menuName\":[\"计算机\"],\"url\":[\"/system/examList/list\"],\"perms\":[\"system:examList:list:student\"],\"orderNum\":[\"1\"],\"icon\":[\"\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:13:50');
+INSERT INTO `sys_oper_log` VALUES (282, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2017\"],\"parentId\":[\"2016\"],\"menuType\":[\"F\"],\"menuName\":[\"计算机\"],\"url\":[\"/system/examList/list\"],\"perms\":[\"system:examList:list:student\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:14:10');
+INSERT INTO `sys_oper_log` VALUES (283, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2017\"],\"parentId\":[\"2016\"],\"menuType\":[\"C\"],\"menuName\":[\"计算机\"],\"url\":[\"/system/examList/list/student\"],\"perms\":[\"system:examList:list:student\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:14:37');
+INSERT INTO `sys_oper_log` VALUES (284, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"100\"],\"roleName\":[\"教师\"],\"roleKey\":[\"teacher\"],\"roleSort\":[\"3\"],\"status\":[\"0\"],\"remark\":[\"老师\"],\"menuIds\":[\"1,100,1000,1001,1002,1003,1004,1005,1006,103,1016,1017,1018,1019,2004,2005,2008,2001,2003,2009\"]}', 0, NULL, '2019-04-25 19:16:31');
+INSERT INTO `sys_oper_log` VALUES (285, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"101\"],\"roleName\":[\"学生\"],\"roleKey\":[\"student\"],\"roleSort\":[\"4\"],\"status\":[\"0\"],\"remark\":[\"学生\"],\"menuIds\":[\"2015,2016,2017\"]}', 0, NULL, '2019-04-25 19:16:40');
+INSERT INTO `sys_oper_log` VALUES (286, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2016\"],\"parentId\":[\"2015\"],\"menuType\":[\"C\"],\"menuName\":[\"考试列表\"],\"url\":[\"/system/examList/student\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:20:15');
+INSERT INTO `sys_oper_log` VALUES (287, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2017\"],\"parentId\":[\"2016\"],\"menuType\":[\"F\"],\"menuName\":[\"计算机\"],\"url\":[\"/system/examList/list/student\"],\"perms\":[\"system:examList:list:student\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 19:26:15');
+INSERT INTO `sys_oper_log` VALUES (288, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"paperId\":[\"13\"],\"postIds\":[\"13\"]}', 1, 'null', '2019-04-25 20:54:37');
+INSERT INTO `sys_oper_log` VALUES (289, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2016\"],\"menuType\":[\"F\"],\"menuName\":[\"考试(学生)\"],\"url\":[\"\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"2\"],\"icon\":[\"\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 20:59:07');
+INSERT INTO `sys_oper_log` VALUES (290, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2018\"],\"parentId\":[\"2016\"],\"menuType\":[\"C\"],\"menuName\":[\"考试(学生)\"],\"url\":[\"/system/examList/getDetailPaper\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-25 20:59:55');
+INSERT INTO `sys_oper_log` VALUES (291, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2018\"],\"parentId\":[\"2016\"],\"menuType\":[\"F\"],\"menuName\":[\"考试(学生)\"],\"url\":[\"/system/examList/getDetailPaper\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"1\"]}', 0, NULL, '2019-04-25 21:00:11');
+INSERT INTO `sys_oper_log` VALUES (292, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"101\"],\"roleName\":[\"学生\"],\"roleKey\":[\"student\"],\"roleSort\":[\"4\"],\"status\":[\"0\"],\"remark\":[\"学生\"],\"menuIds\":[\"2015,2016,2017,2018\"]}', 0, NULL, '2019-04-25 21:00:24');
+INSERT INTO `sys_oper_log` VALUES (293, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"1\"],\"roleName\":[\"管理员\"],\"roleKey\":[\"admin\"],\"roleSort\":[\"1\"],\"status\":[\"0\"],\"remark\":[\"管理员\"],\"menuIds\":[\"1,100,1000,1001,1002,1003,1004,1005,1006,101,1007,1008,1009,1010,1011,102,1012,1013,1014,1015,103,1016,1017,1018,1019,104,1020,1021,1022,1023,1024,105,1025,1026,1027,1028,1029,106,1030,1031,1032,1033,1034,107,1035,1036,1037,1038,108,500,1039,1040,1041,1042,501,1043,1044,1045,2,109,1046,1047,1048,110,1049,1050,1051,1052,1053,1054,1055,111,112,3,113,114,1056,1057,115,2004,2005,2001,2003,2015,2016,2017,2018\"]}', 0, NULL, '2019-04-25 21:02:34');
+INSERT INTO `sys_oper_log` VALUES (294, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2018\"],\"parentId\":[\"2016\"],\"menuType\":[\"F\"],\"menuName\":[\"考试(学生)\"],\"url\":[\"/system/examList/getDetailPaper\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-26 13:04:39');
+INSERT INTO `sys_oper_log` VALUES (295, '菜单管理', 3, 'com.ruoyi.project.system.menu.controller.MenuController.remove()', 1, 'admin', '研发部门', '/system/menu/remove/2018', '127.0.0.1', '内网IP', '{}', 0, NULL, '2019-04-26 13:05:43');
+INSERT INTO `sys_oper_log` VALUES (296, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2018\"],\"parentId\":[\"2016\"],\"menuType\":[\"C\"],\"menuName\":[\"考试(学生)\"],\"url\":[\"/system/examList/getDetailPaper\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-26 13:05:56');
+INSERT INTO `sys_oper_log` VALUES (297, '菜单管理', 3, 'com.ruoyi.project.system.menu.controller.MenuController.remove()', 1, 'admin', '研发部门', '/system/menu/remove/2018', '127.0.0.1', '内网IP', '{}', 0, NULL, '2019-04-26 13:06:05');
+INSERT INTO `sys_oper_log` VALUES (298, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2018\"],\"parentId\":[\"2016\"],\"menuType\":[\"M\"],\"menuName\":[\"考试(学生)\"],\"url\":[\"/system/examList/getDetailPaper\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"2\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-26 13:06:19');
+INSERT INTO `sys_oper_log` VALUES (299, '菜单管理', 3, 'com.ruoyi.project.system.menu.controller.MenuController.remove()', 1, 'admin', '研发部门', '/system/menu/remove/2018', '127.0.0.1', '内网IP', '{}', 0, NULL, '2019-04-26 13:06:27');
+INSERT INTO `sys_oper_log` VALUES (300, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"101\"],\"roleName\":[\"学生\"],\"roleKey\":[\"student\"],\"roleSort\":[\"4\"],\"status\":[\"0\"],\"remark\":[\"学生\"],\"menuIds\":[\"2015,2016,2017\"]}', 0, NULL, '2019-04-26 13:06:43');
+INSERT INTO `sys_oper_log` VALUES (301, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"1\"],\"roleName\":[\"管理员\"],\"roleKey\":[\"admin\"],\"roleSort\":[\"1\"],\"status\":[\"0\"],\"remark\":[\"管理员\"],\"menuIds\":[\"1,100,1000,1001,1002,1003,1004,1005,1006,101,1007,1008,1009,1010,1011,102,1012,1013,1014,1015,103,1016,1017,1018,1019,104,1020,1021,1022,1023,1024,105,1025,1026,1027,1028,1029,106,1030,1031,1032,1033,1034,107,1035,1036,1037,1038,108,500,1039,1040,1041,1042,501,1043,1044,1045,2,109,1046,1047,1048,110,1049,1050,1051,1052,1053,1054,1055,111,112,3,113,114,1056,1057,115,2004,2005,2001,2003,2015,2016,2017\"]}', 0, NULL, '2019-04-26 13:06:49');
+INSERT INTO `sys_oper_log` VALUES (302, '菜单管理', 3, 'com.ruoyi.project.system.menu.controller.MenuController.remove()', 1, 'admin', '研发部门', '/system/menu/remove/2018', '127.0.0.1', '内网IP', '{}', 0, NULL, '2019-04-26 13:07:00');
+INSERT INTO `sys_oper_log` VALUES (303, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2015\"],\"menuType\":[\"M\"],\"menuName\":[\"在线考试\"],\"url\":[\"/system/examList\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"2\"],\"icon\":[\"fa fa-bank\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-26 13:07:51');
+INSERT INTO `sys_oper_log` VALUES (304, '菜单管理', 1, 'com.ruoyi.project.system.menu.controller.MenuController.addSave()', 1, 'admin', '研发部门', '/system/menu/add', '127.0.0.1', '内网IP', '{\"parentId\":[\"2019\"],\"menuType\":[\"C\"],\"menuName\":[\"考试中\"],\"url\":[\"/system/examList/getDetailPaper\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"1\"],\"icon\":[\"\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-26 13:09:19');
+INSERT INTO `sys_oper_log` VALUES (305, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2020\"],\"parentId\":[\"2019\"],\"menuType\":[\"F\"],\"menuName\":[\"考试中\"],\"url\":[\"/system/examList/getDetailPaper\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"1\"],\"icon\":[\"#\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-26 13:09:26');
+INSERT INTO `sys_oper_log` VALUES (306, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"1\"],\"roleName\":[\"管理员\"],\"roleKey\":[\"admin\"],\"roleSort\":[\"1\"],\"status\":[\"0\"],\"remark\":[\"管理员\"],\"menuIds\":[\"1,100,1000,1001,1002,1003,1004,1005,1006,101,1007,1008,1009,1010,1011,102,1012,1013,1014,1015,103,1016,1017,1018,1019,104,1020,1021,1022,1023,1024,105,1025,1026,1027,1028,1029,106,1030,1031,1032,1033,1034,107,1035,1036,1037,1038,108,500,1039,1040,1041,1042,501,1043,1044,1045,2,109,1046,1047,1048,110,1049,1050,1051,1052,1053,1054,1055,111,112,3,113,114,1056,1057,115,2004,2005,2001,2003,2015,2016,2017,2019,2020\"]}', 0, NULL, '2019-04-26 13:09:47');
+INSERT INTO `sys_oper_log` VALUES (307, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"101\"],\"roleName\":[\"学生\"],\"roleKey\":[\"student\"],\"roleSort\":[\"4\"],\"status\":[\"0\"],\"remark\":[\"学生\"],\"menuIds\":[\"2015,2016,2017,2019,2020\"]}', 0, NULL, '2019-04-26 13:09:53');
+INSERT INTO `sys_oper_log` VALUES (308, '菜单管理', 2, 'com.ruoyi.project.system.menu.controller.MenuController.editSave()', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\"menuId\":[\"2019\"],\"parentId\":[\"2015\"],\"menuType\":[\"C\"],\"menuName\":[\"在线考试\"],\"url\":[\"/system/examList/getDetailPaper\"],\"perms\":[\"system:examList:view:student\"],\"orderNum\":[\"2\"],\"icon\":[\"fa fa-bank\"],\"visible\":[\"0\"]}', 0, NULL, '2019-04-26 13:10:52');
+INSERT INTO `sys_oper_log` VALUES (309, '个人信息', 2, 'com.ruoyi.project.system.user.controller.ProfileController.update()', 1, 'admin', '研发部门', '/system/user/profile/update', '127.0.0.1', '内网IP', '{\"userId\":[\"1\"],\"loginName\":[\"admin\"],\"dept.deptName\":[\"研发部门\"],\"userName\":[\"张延磊\"],\"email\":[\"549545303@qq.com\"],\"phonenumber\":[\"17351098691\"],\"sex\":[\"1\"]}', 0, NULL, '2019-04-26 17:04:41');
+INSERT INTO `sys_oper_log` VALUES (310, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/4/27 08:00:00\"],\"endTIme\":[\"2020/4/27 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-27 15:36:07');
+INSERT INTO `sys_oper_log` VALUES (311, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/4/12 08:00:00\"],\"endTIme\":[\"2020/05/06 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-27 15:39:17');
+INSERT INTO `sys_oper_log` VALUES (312, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"13,14\"]}', 0, NULL, '2019-04-27 15:39:32');
+INSERT INTO `sys_oper_log` VALUES (313, '考试列', 1, 'com.ruoyi.project.system.examList.controller.ExamListController.addSave()', 1, 'admin', '研发部门', '/system/examList/add', '127.0.0.1', '内网IP', '{\"name\":[\"1\"],\"startTime\":[\"2019/4/27 08:00:00\"],\"endTIme\":[\"2019/05/06 08:00:00\"],\"status\":[\"1\"]}', 0, NULL, '2019-04-27 15:47:23');
+INSERT INTO `sys_oper_log` VALUES (314, '考试列', 3, 'com.ruoyi.project.system.examList.controller.ExamListController.remove()', 1, 'admin', '研发部门', '/system/examList/remove', '127.0.0.1', '内网IP', '{\"ids\":[\"15\"]}', 0, NULL, '2019-04-27 15:47:51');
+INSERT INTO `sys_oper_log` VALUES (315, '角色管理', 2, 'com.ruoyi.project.system.role.controller.RoleController.editSave()', 1, 'admin', '研发部门', '/system/role/edit', '127.0.0.1', '内网IP', '{\"roleId\":[\"100\"],\"roleName\":[\"教师\"],\"roleKey\":[\"teacher\"],\"roleSort\":[\"3\"],\"status\":[\"0\"],\"remark\":[\"老师\"],\"menuIds\":[\"1,100,1000,1001,1002,1003,1004,1005,1006,103,1016,1017,1018,1019,2004,2005,2008,2010,2011,2001,2003,2009\"]}', 0, NULL, '2019-04-28 16:08:58');
 
 -- ----------------------------
 -- Table structure for sys_post
@@ -870,7 +1241,7 @@ CREATE TABLE `sys_post`  (
   `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`post_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '岗位信息表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '岗位信息表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_post
@@ -898,15 +1269,15 @@ CREATE TABLE `sys_role`  (
   `update_time` datetime(0) NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`role_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 102 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色信息表' ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 101 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色信息表' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_role
 -- ----------------------------
-INSERT INTO `sys_role` VALUES (1, '管理员', 'admin', 1, '1', '0', '0', 'admin', '2018-03-16 11:33:00', 'admin', '2019-03-30 18:16:29', '管理员');
+INSERT INTO `sys_role` VALUES (1, '管理员', 'admin', 1, '1', '0', '0', 'admin', '2018-03-16 11:33:00', 'admin', '2019-04-26 13:09:47', '管理员');
 INSERT INTO `sys_role` VALUES (2, '普通角色', 'common', 2, '2', '0', '0', 'admin', '2018-03-16 11:33:00', 'admin', '2019-03-28 13:44:13', '普通角色');
-INSERT INTO `sys_role` VALUES (100, '教师', 'teacher', 3, '1', '0', '0', 'admin', '2019-03-27 11:16:12', 'admin', '2019-03-30 18:33:06', '老师');
-INSERT INTO `sys_role` VALUES (101, '学生', 'student', 4, '1', '0', '0', 'admin', '2019-03-27 11:16:27', 'admin', '2019-03-30 18:08:16', '学生');
+INSERT INTO `sys_role` VALUES (100, '教师', 'teacher', 3, '1', '0', '0', 'admin', '2019-03-27 11:16:12', 'admin', '2019-04-28 16:08:58', '老师');
+INSERT INTO `sys_role` VALUES (101, '学生', 'student', 4, '1', '0', '0', 'admin', '2019-03-27 11:16:27', 'admin', '2019-04-26 13:09:53', '学生');
 
 -- ----------------------------
 -- Table structure for sys_role_dept
@@ -1021,6 +1392,11 @@ INSERT INTO `sys_role_menu` VALUES (1, 2001);
 INSERT INTO `sys_role_menu` VALUES (1, 2003);
 INSERT INTO `sys_role_menu` VALUES (1, 2004);
 INSERT INTO `sys_role_menu` VALUES (1, 2005);
+INSERT INTO `sys_role_menu` VALUES (1, 2015);
+INSERT INTO `sys_role_menu` VALUES (1, 2016);
+INSERT INTO `sys_role_menu` VALUES (1, 2017);
+INSERT INTO `sys_role_menu` VALUES (1, 2019);
+INSERT INTO `sys_role_menu` VALUES (1, 2020);
 INSERT INTO `sys_role_menu` VALUES (2, 1);
 INSERT INTO `sys_role_menu` VALUES (2, 2);
 INSERT INTO `sys_role_menu` VALUES (2, 3);
@@ -1120,9 +1496,13 @@ INSERT INTO `sys_role_menu` VALUES (100, 2004);
 INSERT INTO `sys_role_menu` VALUES (100, 2005);
 INSERT INTO `sys_role_menu` VALUES (100, 2008);
 INSERT INTO `sys_role_menu` VALUES (100, 2009);
-INSERT INTO `sys_role_menu` VALUES (101, 2001);
-INSERT INTO `sys_role_menu` VALUES (101, 2003);
-INSERT INTO `sys_role_menu` VALUES (101, 2007);
+INSERT INTO `sys_role_menu` VALUES (100, 2010);
+INSERT INTO `sys_role_menu` VALUES (100, 2011);
+INSERT INTO `sys_role_menu` VALUES (101, 2015);
+INSERT INTO `sys_role_menu` VALUES (101, 2016);
+INSERT INTO `sys_role_menu` VALUES (101, 2017);
+INSERT INTO `sys_role_menu` VALUES (101, 2019);
+INSERT INTO `sys_role_menu` VALUES (101, 2020);
 
 -- ----------------------------
 -- Table structure for sys_tb_subject
@@ -1137,38 +1517,42 @@ CREATE TABLE `sys_tb_subject`  (
   `subjectOptionD` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '选项D',
   `subjectAnswer` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '答案',
   `subjectParse` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '解析',
-  PRIMARY KEY (`subjectID`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 30 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '试题库' ROW_FORMAT = Dynamic;
+  `courseId` int(11) NULL DEFAULT NULL COMMENT '课程ID',
+  PRIMARY KEY (`subjectID`) USING BTREE,
+  INDEX `courseId`(`courseId`) USING BTREE,
+  CONSTRAINT `courseId` FOREIGN KEY (`courseId`) REFERENCES `sys_course` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 31 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '试题库' ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of sys_tb_subject
 -- ----------------------------
-INSERT INTO `sys_tb_subject` VALUES (1, '下列十进制数中最大的数是( )。', '1', '2', '6', '1', 'C', '不会说不过去了');
-INSERT INTO `sys_tb_subject` VALUES (2, '下列各进制数中最大的数是( )。', '227O', '1FFH', '1010001B', '789D', 'D', NULL);
-INSERT INTO `sys_tb_subject` VALUES (3, '( )不是微型计算机必须的工作环境。', '恒温', '良好的接地线路', '远离强磁场', '稳定的电源电压', 'A', NULL);
-INSERT INTO `sys_tb_subject` VALUES (4, '( )不是文件。', '设备', '文档', '应用程序', '窗口', 'D', '窗口不是文件');
-INSERT INTO `sys_tb_subject` VALUES (5, '( )不属于Word2003的文档打开方式。', '读写方式', '只读方式', '备份方式', '系统方式', 'D', '系统方式不是Word2003的文档打开方式。');
-INSERT INTO `sys_tb_subject` VALUES (6, '( )菜单中含有设置字体的命令。', '格式', '编辑', '视图', '工具', 'A', NULL);
-INSERT INTO `sys_tb_subject` VALUES (8, '( )的功能是将计算机外部的信息送入计算机。', '输入设备', '输出设备', '软盘', '电源线', 'A', '');
-INSERT INTO `sys_tb_subject` VALUES (9, '( )的主要功能是使用户的计算机与远程主机相连，从而成为远程主机的终端。', 'E-mail', 'FTP', 'Telnet', 'BBS', 'C', '');
-INSERT INTO `sys_tb_subject` VALUES (10, '( )视图方式可对文档不进行分页处理。', '普通', '联机版式', '页面视图', '大纲', 'B', '');
-INSERT INTO `sys_tb_subject` VALUES (12, '( )是微型计算机的外存。 ', 'RAM', 'ROM', '磁盘', '虚拟盘', 'C', '');
-INSERT INTO `sys_tb_subject` VALUES (13, '( )是用来存储程序及数据的装置。', '输入设备', '存储器', '控制器', '输出设备', 'B', '');
-INSERT INTO `sys_tb_subject` VALUES (14, 'NOVELLNETWARE是( )', '网络操作系统', '通用操作系统', '实时操作系统', '分时操作系统', 'A', '');
-INSERT INTO `sys_tb_subject` VALUES (15, '预防计算机病毒的手段，错误的是( )。', '要经常地对硬盘上的文件进行备份', '凡不需要再写入数据的磁盘都应有写保护', '将所有的.COM和.EXE文件赋以“只读”属性', '对磁盘进行清洗', 'D', '');
-INSERT INTO `sys_tb_subject` VALUES (16, '“32位微型计算机”中的32指的是( )', '微机型号', '内存容量', '存储单位', '机器字长', 'D', '');
-INSERT INTO `sys_tb_subject` VALUES (17, '“奔腾”微型计算机采用的微处理器的型号是( )', '80286', '80386', '80486', '80586', 'D', '');
-INSERT INTO `sys_tb_subject` VALUES (18, '“画图”程序是WINDOWS98的一个附件程序，能进行简单的图形处理，产生的文件为位图文件，扩展名为( )。', 'BMP', 'CRH', 'EXE', 'GPH', 'A', '');
-INSERT INTO `sys_tb_subject` VALUES (19, '“开始”菜单中，注销命令将( )。', '关闭系统', '关闭当前窗口上的程序', '关闭所有打开的程序', '以上都不对', 'C', '');
-INSERT INTO `sys_tb_subject` VALUES (20, '“文件”下拉菜单底部所显示的文件名是( )。', '扩展名为DOC的全部文件', '正要打印的文件名', '正在使用的文件名', '最近被Word处理过的文档', 'D', '');
-INSERT INTO `sys_tb_subject` VALUES (21, '“溢出”一般是指计算机在运算过程中产生的( )。', '数据量超过了内存量', '文件个数超过了磁盘目录区规定的范围', '数超过了机器的位所表示的范围', '数超过了变量的表示范围', 'C', '');
-INSERT INTO `sys_tb_subject` VALUES (22, '《计算机软件条例》中所称的计算机软件(简称软件)是指( )。', '计算机程序', '源程序和目标程序', '源程序', '计算机程序及其有关文档', 'D', '');
-INSERT INTO `sys_tb_subject` VALUES (23, '10BaseF的含义是( )。', '10Mbps的宽带光纤网络', '10Mbps的基带同轴电缆网络', '10Mbps的基带光纤网络', '10Mbps的宽带同轴电缆网络', 'C', '');
-INSERT INTO `sys_tb_subject` VALUES (24, '在微机中，主机由微处理器与( )组成。', '运算器', '磁盘存储器', '软盘存储器', '内存储器', 'D', '');
-INSERT INTO `sys_tb_subject` VALUES (25, '1MB的存储容量相当于( )。', '一百万个字节', '2的10次方个字节', '2的20次方个字节', '1000KB', 'C', '');
-INSERT INTO `sys_tb_subject` VALUES (26, '1nternet的分层结构是由( )这个四层组成。', ' 应用层、传输层、通信子网层和物理层', '应用层、表示层、传输层和网络层', '物理层、数据链路层、网络层和传输层', '网络接口层、网络层、传输层和应用层', 'D', '');
-INSERT INTO `sys_tb_subject` VALUES (27, 'WindowsXP中改变窗口的大小时，应操作( )。', '窗口的四角或四边', '窗口右上角的按钮', '窗口的标题栏', '窗口左上角的控制栏', 'A', '');
-INSERT INTO `sys_tb_subject` VALUES (28, '在WindowsXP操作系统中，对话框的大小是( )。', '可变的', '可任意设置的', '固定的', '与不同的操作有关的', 'D', '');
+INSERT INTO `sys_tb_subject` VALUES (1, '下列十进制数中最大的数是( )。', '1', '2', '6', '1', 'C', '不会说不过去了', 1);
+INSERT INTO `sys_tb_subject` VALUES (2, '下列各进制数中最大的数是( )。', '227O', '1FFH', '1010001B', '789D', 'D', NULL, 1);
+INSERT INTO `sys_tb_subject` VALUES (3, '( )不是微型计算机必须的工作环境。', '恒温', '良好的接地线路', '远离强磁场', '稳定的电源电压', 'A', NULL, 1);
+INSERT INTO `sys_tb_subject` VALUES (4, '( )不是文件。', '设备', '文档', '应用程序', '窗口', 'D', '窗口不是文件', 1);
+INSERT INTO `sys_tb_subject` VALUES (5, '( )不属于Word2003的文档打开方式。', '读写方式', '只读方式', '备份方式', '系统方式', 'D', '系统方式不是Word2003的文档打开方式。', 1);
+INSERT INTO `sys_tb_subject` VALUES (6, '( )菜单中含有设置字体的命令。', '格式', '编辑', '视图', '工具', 'A', NULL, 1);
+INSERT INTO `sys_tb_subject` VALUES (8, '( )的功能是将计算机外部的信息送入计算机。', '输入设备', '输出设备', '软盘', '电源线', 'A', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (9, '( )的主要功能是使用户的计算机与远程主机相连，从而成为远程主机的终端。', 'E-mail', 'FTP', 'Telnet', 'BBS', 'C', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (10, '( )视图方式可对文档不进行分页处理。', '普通', '联机版式', '页面视图', '大纲', 'B', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (12, '( )是微型计算机的外存。 ', 'RAM', 'ROM', '磁盘', '虚拟盘', 'C', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (13, '( )是用来存储程序及数据的装置。', '输入设备', '存储器', '控制器', '输出设备', 'B', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (14, 'NOVELLNETWARE是( )', '网络操作系统', '通用操作系统', '实时操作系统', '分时操作系统', 'A', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (15, '预防计算机病毒的手段，错误的是( )。', '要经常地对硬盘上的文件进行备份', '凡不需要再写入数据的磁盘都应有写保护', '将所有的.COM和.EXE文件赋以“只读”属性', '对磁盘进行清洗', 'D', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (16, '“32位微型计算机”中的32指的是( )', '微机型号', '内存容量', '存储单位', '机器字长', 'D', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (17, '“奔腾”微型计算机采用的微处理器的型号是( )', '80286', '80386', '80486', '80586', 'D', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (18, '“画图”程序是WINDOWS98的一个附件程序，能进行简单的图形处理，产生的文件为位图文件，扩展名为( )。', 'BMP', 'CRH', 'EXE', 'GPH', 'A', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (19, '“开始”菜单中，注销命令将( )。', '关闭系统', '关闭当前窗口上的程序', '关闭所有打开的程序', '以上都不对', 'C', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (20, '“文件”下拉菜单底部所显示的文件名是( )。', '扩展名为DOC的全部文件', '正要打印的文件名', '正在使用的文件名', '最近被Word处理过的文档', 'D', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (21, '“溢出”一般是指计算机在运算过程中产生的( )。', '数据量超过了内存量', '文件个数超过了磁盘目录区规定的范围', '数超过了机器的位所表示的范围', '数超过了变量的表示范围', 'C', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (22, '《计算机软件条例》中所称的计算机软件(简称软件)是指( )。', '计算机程序', '源程序和目标程序', '源程序', '计算机程序及其有关文档', 'D', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (23, '10BaseF的含义是( )。', '10Mbps的宽带光纤网络', '10Mbps的基带同轴电缆网络', '10Mbps的基带光纤网络', '10Mbps的宽带同轴电缆网络', 'C', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (24, '在微机中，主机由微处理器与( )组成。', '运算器', '磁盘存储器', '软盘存储器', '内存储器', 'D', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (25, '1MB的存储容量相当于( )。', '一百万个字节', '2的10次方个字节', '2的20次方个字节', '1000KB', 'C', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (26, '1nternet的分层结构是由( )这个四层组成。', ' 应用层、传输层、通信子网层和物理层', '应用层、表示层、传输层和网络层', '物理层、数据链路层、网络层和传输层', '网络接口层、网络层、传输层和应用层', 'D', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (27, 'WindowsXP中改变窗口的大小时，应操作( )。', '窗口的四角或四边', '窗口右上角的按钮', '窗口的标题栏', '窗口左上角的控制栏', 'A', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (28, '在WindowsXP操作系统中，对话框的大小是( )。', '可变的', '可任意设置的', '固定的', '与不同的操作有关的', 'D', '', 1);
+INSERT INTO `sys_tb_subject` VALUES (31, '1+1=?', '2', '10', '5', '6', 'A', '2，10在二进制下是正确的', 2);
 
 -- ----------------------------
 -- Table structure for sys_user
@@ -1201,11 +1585,11 @@ CREATE TABLE `sys_user`  (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES (1, 104, 'admin', '张延磊', '00', '549545303@qq.com', '17351098691', '0', '2019/03/27/c9a3ae5c4790cf3a46fd6f721f46f36b.jpg', 'a3ea1480d14f688070ea58322a6f9863', '1b123d', '0', '0', '127.0.0.1', '2019-03-30 18:33:49', 'admin', '2018-03-16 11:33:00', 'admin', '2019-03-30 18:33:48', '管理员');
+INSERT INTO `sys_user` VALUES (1, 104, 'admin', '张延磊', '00', '549545303@qq.com', '17351098691', '1', '2019/03/27/c9a3ae5c4790cf3a46fd6f721f46f36b.jpg', 'a3ea1480d14f688070ea58322a6f9863', '1b123d', '0', '0', '127.0.0.1', '2019-04-28 16:08:38', 'admin', '2018-03-16 11:33:00', 'admin', '2019-04-28 16:08:38', '管理员');
 INSERT INTO `sys_user` VALUES (21, 102, 'teacher', '张延磊', '11', '549545303@qq.com', '17351098691', '0', '', 'a3ea1480d14f688070ea58322a6f9863', '1b123d', '0', '2', '127.0.0.1', '2019-03-27 10:20:39', 'admin', '2018-03-27 10:51:00', 'admin', '2019-03-28 11:46:24', 'teacher');
 INSERT INTO `sys_user` VALUES (31, 103, 'student', '张延磊', '11', '549545303@qq.com', '17351098691', '0', '', 'a3ea1480d14f688070ea58322a6f9863', '1b123d', '0', '2', '127.0.0.1', '2019-03-27 10:20:39', 'admin', '2018-03-27 10:51:00', 'admin', '2019-03-28 11:46:15', 'student');
-INSERT INTO `sys_user` VALUES (100, 200, 'stu', 'stu', '11', '123@qq.com', '13912604119', '0', '2019/03/28/40a6a76d9ac96e19cd7711f744c32358.jpg', '0917f16395fc4d1ce12817e1d3ede86b', '299ea1', '0', '0', '127.0.0.1', '2019-03-29 20:13:34', 'admin', '2019-03-28 11:49:28', 'admin', '2019-03-30 18:12:10', '');
-INSERT INTO `sys_user` VALUES (101, 102, 'js', 'js', '11', '11@qq.com', '13064970930', '0', '2019/03/28/57400e08a225d182fa6c899fdc8a7402.jpg', '73691c00302da167aed3df8d2144d8b4', 'facf69', '0', '0', '127.0.0.1', '2019-03-30 18:34:47', 'admin', '2019-03-28 11:50:15', 'admin', '2019-03-30 18:34:47', '');
+INSERT INTO `sys_user` VALUES (100, 200, 'stu', 'stu', '11', '123@qq.com', '13912604119', '0', '2019/03/28/40a6a76d9ac96e19cd7711f744c32358.jpg', '0917f16395fc4d1ce12817e1d3ede86b', '299ea1', '0', '0', '127.0.0.1', '2019-04-28 16:17:00', 'admin', '2019-03-28 11:49:28', 'admin', '2019-04-28 16:16:59', '');
+INSERT INTO `sys_user` VALUES (101, 102, 'js', 'js', '11', '11@qq.com', '13064970930', '0', '2019/03/28/57400e08a225d182fa6c899fdc8a7402.jpg', '73691c00302da167aed3df8d2144d8b4', 'facf69', '0', '0', '127.0.0.1', '2019-04-28 16:01:27', 'admin', '2019-03-28 11:50:15', 'admin', '2019-04-28 16:01:27', '');
 INSERT INTO `sys_user` VALUES (102, 200, 'stu1', '张三', '00', '123456@qq.com', '17610356896', '1', '', 'ff00723abc5582df6eda72a537c44e7f', '649763', '0', '0', '', NULL, 'js', '2019-03-30 18:06:08', '', NULL, '');
 
 -- ----------------------------
@@ -1226,11 +1610,6 @@ CREATE TABLE `sys_user_online`  (
   `expire_time` int(5) NULL DEFAULT 0 COMMENT '超时时间，单位为分钟',
   PRIMARY KEY (`sessionId`) USING BTREE
 ) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '在线用户记录' ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of sys_user_online
--- ----------------------------
-INSERT INTO `sys_user_online` VALUES ('fab2010d-b644-4b72-9be9-6cba93440807', 'js', '教学部', '127.0.0.1', '内网IP', 'Chrome', 'Windows 7', 'on_line', '2019-03-30 18:34:35', '2019-03-30 18:34:47', 1800000);
 
 -- ----------------------------
 -- Table structure for sys_user_post
